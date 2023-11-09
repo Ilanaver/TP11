@@ -4,7 +4,8 @@ namespace TP11.Controllers;
 
 public class HomeController : Controller
 {
-    public IActionResult Index()
+      public IActionResult Inicio()
     {
+        return View();
     }
 }

@@ -17,7 +17,7 @@ where IdEquipo=@idEquipo
 end
 go
 
-CREATE procedure GetUsuarioByID(@idUsuario int)
+CREATE procedure GetUsuarioByID(@idUsuario int) 
 as
 begin
 select * from  Usuario where IdUsuario=@idUsuario
@@ -56,8 +56,8 @@ go
 CREATE procedure GetTitulosByEquipo(@idEquipo int)
 as
 begin
-select * from TituloXEquipo 
-inner join Titulos on Titulos.IdTitulo=TituloXEquipo.IdTitulo
+select TE.*,T.Imagen,T.Nombre from TituloXEquipo TE
+inner join Titulos T on T.IdTitulo=TE.IdTitulo
 where IdEquipo=@idEquipo
 end
 go
@@ -65,9 +65,18 @@ go
 CREATE procedure GetTitulosByJugador(@idJugador int)
 as
 begin
-select * from TituloXJugador
-inner join Titulos on Titulos.IdTitulo=TituloXJugador.IdTitulo
+select *,T.Imagen,T.Nombre from TituloXJugador TJ
+inner join Titulos T on T.IdTitulo=TJ.IdTitulo
 where IdJugador=@idJugador
 end
 go
+
+CREATE procedure GetTENPlayers
+as
+begin
+select TOP 10 * FROM Jugador
+ORDER BY Likes DESC
+end
+go
+
 
