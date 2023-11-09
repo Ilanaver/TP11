@@ -1,4 +1,4 @@
-public class jugador{
+public class Jugador{
     public int IdJugador{get;set;}
     public int IdPais{get;set;}
     public int IdEquipoActual{get;set;}
