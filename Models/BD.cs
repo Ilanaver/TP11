@@ -29,14 +29,45 @@ public static class BD {
         }
         return ListaUsuarios;
     }
-
     
-    public static List<Usuario> GetJugadoresByEquipo(int idUser){
-        List<Usuario> ListaUsuarios = null;
+    public static List<Jugador> GetJugadoresByEquipo(int idteam){
+        List<Jugador> ListaJugadores = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "GetJugadoresByEquipo";
-            ListaUsuarios = db.Query<Usuario>(sp, new { IdUsuario = idUser}, commandType: CommandType.StoredProcedure).ToList();
+            ListaJugadores = db.Query<Jugador>(sp, new { IdEquipoActual = idteam}, commandType: CommandType.StoredProcedure).ToList();
         }
-        return ListaUsuarios;
+        return ListaJugadores;
+    }
+    public static List<Jugador> GetJugadoresByPais(int idPais){
+        List<Jugador> ListaJugadores = null;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "GetJugadoresByEquipo";
+            ListaJugadores = db.Query<Jugador>(sp, new { IdPais = idPais}, commandType: CommandType.StoredProcedure).ToList();
+        }
+        return ListaJugadores;
+    }
+    public static List<Comentario> GetComentarioByJugador(int idJugador){
+        List<Comentario> ListaComentarios = null;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "GetComentarioByJugador";
+            ListaComentarios = db.Query<Comentario>(sp, new { IdJugador = idJugador}, commandType: CommandType.StoredProcedure).ToList();
+        }
+        return ListaComentarios;
+    }
+    public static List<Equipo> GetEquiposByPais(int idPais){
+        List<Equipo> ListaComentarios = null;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "GetEquiposByPais";
+            ListaComentarios = db.Query<Equipo>(sp, new { IdPais = idPais}, commandType: CommandType.StoredProcedure).ToList();
+        }
+        return ListaComentarios;
+    }
+    public static List<TituloXEquipo> GetTitulosByEquipo(int idPais){
+        List<TituloXEquipo> ListaComentarios = null;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "GetTitulosByEquipo";
+            ListaComentarios = db.Query<TituloXEquipo>(sp, new { IdPais = idPais}, commandType: CommandType.StoredProcedure).ToList();
+        }
+        return ListaComentarios;
     }
 }
