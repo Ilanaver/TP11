@@ -6,6 +6,7 @@ public class HomeController : Controller
 {
     public IActionResult Inicio()
     {
+        ViewBag.PrimerosJugadores=BD.GetTENPlayers();
         return View();
     }
     public IActionResult Busqueda()
