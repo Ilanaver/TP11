@@ -6,6 +6,8 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        ViewBag.PrimerosJugadores=BD.GetTenjugadores();
+        ViewBag.PrimerosJugadores=BD.GetTENPlayers();
+
+        return View("Inicio");
     }
 }

@@ -55,19 +55,27 @@ public static class BD {
         return ListaComentarios;
     }
     public static List<Equipo> GetEquiposByPais(int idPais){
-        List<Equipo> ListaComentarios = null;
+        List<Equipo> ListaEquipos = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "GetEquiposByPais";
-            ListaComentarios = db.Query<Equipo>(sp, new { IdPais = idPais}, commandType: CommandType.StoredProcedure).ToList();
+            ListaEquipos = db.Query<Equipo>(sp, new { IdPais = idPais}, commandType: CommandType.StoredProcedure).ToList();
         }
-        return ListaComentarios;
+        return ListaEquipos;
     }
-    public static List<TituloXEquipo> GetTitulosByEquipo(int idPais){
-        List<TituloXEquipo> ListaComentarios = null;
+    public static List<TituloXEquipo> GetTitulosByEquipo(int idEquipo){
+        List<TituloXEquipo> ListaTitulos = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "GetTitulosByEquipo";
-            ListaComentarios = db.Query<TituloXEquipo>(sp, new { IdPais = idPais}, commandType: CommandType.StoredProcedure).ToList();
+            ListaTitulos = db.Query<TituloXEquipo>(sp, new { IdEquipo = idEquipo}, commandType: CommandType.StoredProcedure).ToList();
         }
-        return ListaComentarios;
+        return ListaTitulos;
+    }
+    public static List<Jugador> GetTENPlayers(){
+        List<Jugador> ListaPlayers = null;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "GetTENPlayers";
+            ListaPlayers = db.Query<Jugador>(sp, commandType: CommandType.StoredProcedure).ToList();
+        }
+        return ListaPlayers;
     }
 }
