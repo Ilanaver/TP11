@@ -4,25 +4,10 @@ namespace TP11.Controllers;
 
 public class HomeController : Controller
 {
-    public IActionResult Inicio()
+    public IActionResult Index()
     {
-        return View();
-    }
-    public IActionResult Busqueda()
-    {
-        return View();
-    }
-    public IActionResult InfoJugador()
-    {
-        return View();
-    }
-    public IActionResult InfoEquipo()
-    {
-        return View();
-    }
-    public IActionResult Perfil()
-    {
-        return View();
-    }
+        ViewBag.PrimerosJugadores=BD.GetTENPlayers();
 
+        return View("Inicio");
+    }
 }
