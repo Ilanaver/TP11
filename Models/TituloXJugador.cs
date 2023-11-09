@@ -3,4 +3,6 @@ public class TituloXJugador{
     public int idJugador{get;set;}
     public int IdTitulo{get;set;}
     public int Año{get;set;}
+    public string ImTitulo{get;set;}
+    public string NomTitulo{get;set;}
 }
