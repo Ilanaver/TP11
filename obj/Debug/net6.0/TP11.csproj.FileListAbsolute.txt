@@ -1,0 +1,8 @@
+Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.csproj.AssemblyReference.cache
+Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.GeneratedMSBuildEditorConfig.editorconfig
+Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.AssemblyInfoInputs.cache
+Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.AssemblyInfo.cs
+Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.csproj.CoreCompileInputs.cache
+Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.MvcApplicationPartsAssemblyInfo.cache
+Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.RazorAssemblyInfo.cache
+Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.RazorAssemblyInfo.cs
