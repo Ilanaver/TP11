@@ -1,5 +1,5 @@
 public class jugador{
-    public int dJugador{get;set;}
+    public int IdJugador{get;set;}
     public int IdPais{get;set;}
     public int IdEquipoActual{get;set;}
     public string Nombre{get;set;}
@@ -11,5 +11,7 @@ public class jugador{
     public int Goles{get;set;}
     public int Likes{get;set;}
     public int Dislikes{get;set;}
+    public string ImEquipo{get;set;}
+    public string ImPais{get;set;}
 
 }
