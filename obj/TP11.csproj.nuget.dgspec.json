@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\programacion 2023\\tp11\\TP11.csproj": {}
+    "Z:\\programacion 2023\\TP11\\TP11.csproj": {}
   },
   "projects": {
-    "Z:\\programacion 2023\\tp11\\TP11.csproj": {
+    "Z:\\programacion 2023\\TP11\\TP11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\programacion 2023\\tp11\\TP11.csproj",
+        "projectUniqueName": "Z:\\programacion 2023\\TP11\\TP11.csproj",
         "projectName": "TP11",
-        "projectPath": "Z:\\programacion 2023\\tp11\\TP11.csproj",
+        "projectPath": "Z:\\programacion 2023\\TP11\\TP11.csproj",
         "packagesPath": "C:\\Users\\47958668\\.nuget\\packages\\",
-        "outputPath": "Z:\\programacion 2023\\tp11\\obj\\",
+        "outputPath": "Z:\\programacion 2023\\TP11\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
