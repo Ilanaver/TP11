@@ -13,14 +13,16 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult InfoJugador()
+    public IActionResult InfoJugador(int IdJugador)
     {
-        ViewBag.Jugador=BD.GetJugadorByID();
+        ViewBag.Jugador=BD.GetJugadorByID(IdJugador);
+        ViewBag.TitulosJugador=BD.GetTitulosByJugador(IdJugador);
         return View();
     }
     public IActionResult InfoEquipo()
     {
         ViewBag.Equipo=BD.GetEquipoByID();
+        ViewBag.TitulosEquipo=
         return View();
     }
     public IActionResult Perfil()
