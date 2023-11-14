@@ -18374,11 +18374,6 @@
   "RootNamespace": "TP11",
   "Documents": [
     {
-      "FilePath": "z:\\programacion 2023\\TP11\\Views\\Home\\Inicio.cshtml",
-      "TargetPath": "Views\\Home\\Inicio.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "z:\\programacion 2023\\TP11\\Views\\Home\\InfoJugador.cshtml",
       "TargetPath": "Views\\Home\\InfoJugador.cshtml",
       "FileKind": "mvc"
@@ -18396,6 +18391,11 @@
     {
       "FilePath": "z:\\programacion 2023\\TP11\\Views\\Home\\PaginaInicial.cshtml",
       "TargetPath": "Views\\Home\\PaginaInicial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "z:\\programacion 2023\\TP11\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
