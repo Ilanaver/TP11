@@ -1,6 +1,7 @@
 using Dapper;
 using System.Data.SqlClient;
 using System.Data;
+namespace TP11.Models;
 
 public static class BD {
     public static string _connectionString = @"Server=localhost;DataBase=FuthubBD;Trusted_Connection=True;";
