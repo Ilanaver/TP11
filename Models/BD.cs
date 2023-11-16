@@ -6,13 +6,13 @@ namespace TP11.Models;
 public static class BD {
     public static string _connectionString = @"Server=localhost;DataBase=FuthubBD;Trusted_Connection=True;";
     
-    public static List<Jugador> GetJugadorByID(int idjug){
-        List<Jugador> ListaJugador = null;
+    public static Jugador GetJugadorByID(int idjug){
+        Jugador UnJugador = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "GetJugadorByID";
-            ListaJugador = db.Query<Jugador>(sp, new { IdJugador = idjug}, commandType: CommandType.StoredProcedure).ToList();
+            UnJugador = db.QueryFirstOrDefault<Jugador>(sp, new { IdJugador = idjug}, commandType: CommandType.StoredProcedure);
         }
-        return ListaJugador;
+        return UnJugador;
     }
     public static List<Equipo> GetEquipoByID(int idteam){
         List<Equipo> ListaEquipos = null;

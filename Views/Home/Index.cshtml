@@ -24,7 +24,7 @@
       <h5 class="card-title">@item.Nombre</h5>
       <p class="card-text">@item.Descripcion</p>
       <link rel="stylesheet" href='@Url.Action("InfoJugador", new{IdJugador=item.IdJugador})'>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href='@Url.Action("InfoJugador", new{IdJugador=@item.IdJugador})' class="btn btn-primary">Ver Info</a>
     </div>
   </div>
   <br>
