@@ -4,7 +4,7 @@ namespace TP11.Controllers;
 
 public class HomeController : Controller
 {
-    public IActionResult Inicio()
+    public IActionResult Index()
     {
         ViewBag.PrimerosJugadores=BD.GetTENPlayers();
         return View();
