@@ -4,7 +4,7 @@ namespace TP11.Controllers;
 
 public class HomeController : Controller
 {
-    public IActionResult Inicio()
+    public IActionResult Index()
     {
         ViewBag.PrimerosJugadores=BD.GetTENPlayers();
         return View();
@@ -25,9 +25,16 @@ public class HomeController : Controller
         ViewBag.TitulosEquipo=BD.GetTitulosByEquipo(IdEquipo);
         return View();
     }
-    public IActionResult Perfil()
+    public IActionResult Perfil(int IdUsuario)
     {
+        ViewBag.Perfil=BD.GetUsuarioByID(IdUsuario);
         return View();
     }
 
+    public IActionResult AgregarJugador(int IdUsuario)
+    {
+        /*ViewBag.ListaPaises=BD.;
+        ViewBag.ListaEquipos=BD.*/
+        return View();
+    }
 }
