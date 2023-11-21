@@ -44,6 +44,17 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult AgregarJugador()
+    {
+        /*ViewBag.ListaPaises=BD.GetPaises();
+        ViewBag.ListaEquipos=BD.GetEquipos()*/
+        return View();
+    }
+    public IActionResult GuardarJugador(Jugador jug)
+    {
+        //BD.InsertarJugador(jug);
+        return RedirectToAction("InfoJugador",new{IdJugador=jug.IdJugador});
+    }
     //public IActionResult AgregarJugador(int IdUsuario)
   //  {
         /*ViewBag.ListaPaises=BD.;
