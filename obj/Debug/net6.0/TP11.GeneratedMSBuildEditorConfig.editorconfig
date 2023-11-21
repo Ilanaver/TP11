@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = Z:\programacion 2023\TP11
 build_property._RazorSourceGeneratorDebug = 
 
+[Z:/programacion 2023/TP11/Views/Home/CambiarContraseña.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYW1iaWFyQ29udHJhc2XDsWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [Z:/programacion 2023/TP11/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,8 +32,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmZvSnVnYWRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[Z:/programacion 2023/TP11/Views/Home/Inicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmljaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [Z:/programacion 2023/TP11/Views/Home/PaginaInicial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdpbmFJbmljaWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/programacion 2023/TP11/Views/Home/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/programacion 2023/TP11/Views/Shared/Error.cshtml]
