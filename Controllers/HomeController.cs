@@ -31,10 +31,15 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult AgregarJugador(int IdUsuario)
+    public IActionResult AgregarJugador()
     {
-        /*ViewBag.ListaPaises=BD.;
-        ViewBag.ListaEquipos=BD.*/
+        /*ViewBag.ListaPaises=BD.GetPaises();
+        ViewBag.ListaEquipos=BD.GetEquipos()*/
         return View();
+    }
+    public IActionResult GuardarJugador(Jugador jug)
+    {
+        //BD.InsertarJugador(jug);
+        return RedirectToAction("InfoJugador",new{IdJugador=jug.IdJugador});
     }
 }
