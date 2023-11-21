@@ -31,7 +31,6 @@ public class HomeController : Controller
         return View();
     }
 
-<<<<<<< HEAD
     public IActionResult AgregarJugador()
     {
         /*ViewBag.ListaPaises=BD.GetPaises();
@@ -43,12 +42,10 @@ public class HomeController : Controller
         //BD.InsertarJugador(jug);
         return RedirectToAction("InfoJugador",new{IdJugador=jug.IdJugador});
     }
-=======
     //public IActionResult AgregarJugador(int IdUsuario)
   //  {
         /*ViewBag.ListaPaises=BD.;
         ViewBag.ListaEquipos=BD.
         return View();*/
    // }
->>>>>>> ee41574e5c02c983777aea1692f2a102c25e46ac
 }
