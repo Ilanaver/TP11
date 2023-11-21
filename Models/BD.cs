@@ -92,7 +92,7 @@ public static class BD {
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "CrearJugador";
             db.Execute(sp, new {idPais=jug.IdPais,idEquipo=jug.IdEquipoActual,nom=jug.Nombre,
-            img=jug.Imagen,edad=jug.Edad,desc=jug.Edad,pos=jug.Posicion,part=jug.PartidosJugados,gol=jug.Goles,like=jug.Likes}, commandType: CommandType.StoredProcedure);
+            img=jug.ImagenJugador,edad=jug.Edad,desc=jug.Edad,pos=jug.Posicion,part=jug.PartidosJugados,gol=jug.Goles,like=jug.Likes}, commandType: CommandType.StoredProcedure);
         }
     }
 }
