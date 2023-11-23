@@ -4,7 +4,7 @@ namespace TP11.Controllers;
 
 public class Account : Controller
 {
-    public IActionResult Registro(Usuarioo us)
+    public IActionResult Registro(Usuario us)
     {
         BD.CrearUsuario(us);
         return RedirectToAction("Inicio","Home");

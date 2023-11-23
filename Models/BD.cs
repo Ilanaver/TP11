@@ -8,7 +8,7 @@ public static class BD {
     
     private static string connectionString = @"Server=localhost;DataBase=ingreso;Trusted_Connection=True;";
 
-    public static void CrearUsuario(Usuarioo us)
+   public static void CrearUsuario(Usuario us)
     {
         using (SqlConnection BD = new SqlConnection(connectionString))
         {
@@ -26,13 +26,13 @@ public static class BD {
         }
     }
 
-    public static Usuarioo mostrarDatos(int IdUsuario, string username, string nombre, string email, int telefono)
+    public static Usuario mostrarDatos(int IdUsuario, string username, string nombre, string email, int telefono)
     {
-        Usuarioo us = null;
+        Usuario us = null;
         using (SqlConnection BD = new SqlConnection(connectionString))
         {
             string sql = "SELECT username, nombre, email, telefono from Usuario where idUsuario=@IDusuario";
-            us = BD.QueryFirstOrDefault<Usuarioo>(sql, new { IdUsuario = IdUsuario });
+            us = BD.QueryFirstOrDefault<Usuario>(sql, new { IdUsuario = IdUsuario });
         }
         return us;
     }
@@ -131,11 +131,27 @@ public static class BD {
         return ListaTitulos;
     }
 
-    public static void CrearJugador(Jugador jug){
+    public static void InsertarJugador(Jugador jug){
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sp = "CrearJugador";
-            db.Execute(sp, new {idPais=jug.IdPais,idEquipo=jug.IdEquipoActual,nom=jug.Nombre,
-            img=jug.ImagenJugador,edad=jug.Edad,desc=jug.Edad,pos=jug.Posicion,part=jug.PartidosJugados,gol=jug.Goles,like=jug.Likes}, commandType: CommandType.StoredProcedure);
+            string sp = "InsertarJugador";
+            db.Execute(sp, new {IdPais = jug.IdPais,
+            IdEquipoActual = jug.IdEquipoActual,
+            Nombre = jug.Nombre,
+            Imagen = jug.ImagenJugador,
+            Edad = jug.Edad,
+            Descripcion = jug.Descripcion,
+            Posicion = jug.Posicion,
+            PartidosJugados = jug.PartidosJugados,
+            Goles = jug.Goles,
+            Likes = jug.Likes,
+            Dislikes = jug.Dislikes}, commandType: CommandType.StoredProcedure);
+        }
+    }
+
+    public static void Busqueda(string buscado){
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "Busqueda";
+            db.Execute(sp, new {terminoBuscado=buscado}, commandType: CommandType.StoredProcedure);
         }
     }
 }

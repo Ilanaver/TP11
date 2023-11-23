@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qUwcrfGrakzeeuspjVSZjp5yUSKb+1/JewMm+fuqP4V+ui6oRZchxO5jRhPZyyW4KvqPrv6vBCgZgHlg9P+K+w==",
+  "dgSpecHash": "vXCGupNpBm3iZbpvKFNwX7uChfFKFhLPu7p4tkuwetKY2tZWIRg5mBYh+Vp6Mh1Kqbn8bBKXySJUuMnTlIPs/w==",
   "success": true,
   "projectFilePath": "Z:\\programacion 2023\\TP11\\TP11.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\47958668\\.nuget\\packages\\dapper\\2.1.21\\dapper.2.1.21.nupkg.sha512",
+    "C:\\Users\\47958668\\.nuget\\packages\\dapper\\2.1.24\\dapper.2.1.24.nupkg.sha512",
     "C:\\Users\\47958668\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\47958668\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\47958668\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
