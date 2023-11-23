@@ -58,10 +58,29 @@ public class HomeController : Controller
         return RedirectToAction("InfoJugador",new{IdJugador=jug.IdJugador});
     }
 
-    public IActionResult AgregarTituloJugador()
+    public IActionResult AgregarTituloJugador(int idJugador)
     {
-        ViewBag.ListaPaises=BD.GetPaises();
-        ViewBag.ListaEquipos=BD.GetEquipos();
+        //ViewBag.ListaTitulos=BD.GetTitulos();     HACER SP
+        ViewBag.IdJugador=idJugador;
         return View();
     }
+
+    public IActionResult GuardarTituloJugador(TituloXJugador TXJ)
+    {
+        //BD.InsertarTituloJugador(TXJ)             HACER SP
+        return RedirectToAction("InfoJugador",new{IdJugador=TXJ.idJugador});
+    }
+
+    /*public IActionResult AgregarTituloJugador(int idJugador)
+    {
+        //ViewBag.ListaTitulos=BD.GetTitulos();     HACER SP
+        ViewBag.IdJugador=idJugador;
+        return View();
+    }
+
+    public IActionResult GuardarTituloJugador(TituloXJugador TXJ)
+    {
+        //BD.InsertarTituloJugador(TXJ)             HACER SP
+        return RedirectToAction("InfoJugador",new{IdJugador=TXJ.idJugador});
+    }           TITULOXEQUIPO*/     
 }
