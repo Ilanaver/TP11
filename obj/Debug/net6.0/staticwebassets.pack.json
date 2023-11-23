@@ -2,42 +2,42 @@
   "Files": [
     {
 <<<<<<< HEAD
-      "Id": "Z:\\2023\\programacion\\TP11-main\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
+      "Id": "Z:\\ort2023\\prog\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
       "PackagePath": "staticwebassets\\TP11.bundle.scp.css"
     },
     {
-      "Id": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\css\\site.css",
+      "Id": "Z:\\ort2023\\prog\\TP11\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\favicon.ico",
+      "Id": "Z:\\ort2023\\prog\\TP11\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\imagenPrincipal.png",
+      "Id": "Z:\\ort2023\\prog\\TP11\\wwwroot\\imagenPrincipal.png",
       "PackagePath": "staticwebassets\\imagenPrincipal.png"
     },
     {
-      "Id": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\js\\site.js",
+      "Id": "Z:\\ort2023\\prog\\TP11\\wwwroot\\js\\site.js",
 =======
-      "Id": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
+      "Id": "Z:\\programacion 2023\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
       "PackagePath": "staticwebassets\\TP11.bundle.scp.css"
     },
     {
-      "Id": "D:\\Escritorio\\TP11\\wwwroot\\css\\site.css",
+      "Id": "Z:\\programacion 2023\\TP11\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\Escritorio\\TP11\\wwwroot\\favicon.ico",
+      "Id": "Z:\\programacion 2023\\TP11\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Escritorio\\TP11\\wwwroot\\imagenPrincipal.png",
+      "Id": "Z:\\programacion 2023\\TP11\\wwwroot\\imagenPrincipal.png",
       "PackagePath": "staticwebassets\\imagenPrincipal.png"
     },
     {
-      "Id": "D:\\Escritorio\\TP11\\wwwroot\\js\\site.js",
->>>>>>> ca631ddad00cec8e54af7a7e0a1ff2487e6d6bbc
+      "Id": "Z:\\programacion 2023\\TP11\\wwwroot\\js\\site.js",
+>>>>>>> 1ee455d89e9aa5c2f7eaa7aa15cf6384be5bf2f8
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {

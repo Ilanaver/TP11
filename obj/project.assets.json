@@ -505,58 +505,24 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "C:\\Users\\47573419\\.nuget\\packages\\": {},
+    "C:\\Users\\47958668\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
-=======
-    "C:\\Users\\Santi Palma\\.nuget\\packages\\": {}
->>>>>>> ca631ddad00cec8e54af7a7e0a1ff2487e6d6bbc
-=======
-    "C:\\Users\\47490026\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
->>>>>>> 381785636493ae2fdb54bac86d66f8575443551d
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "projectUniqueName": "Z:\\2023\\programacion\\TP11-main\\TP11\\TP11.csproj",
+      "projectUniqueName": "Z:\\programacion 2023\\TP11\\TP11.csproj",
       "projectName": "TP11",
-      "projectPath": "Z:\\2023\\programacion\\TP11-main\\TP11\\TP11.csproj",
-      "packagesPath": "C:\\Users\\47573419\\.nuget\\packages\\",
-      "outputPath": "Z:\\2023\\programacion\\TP11-main\\TP11\\obj\\",
-=======
-      "projectUniqueName": "D:\\Escritorio\\TP11\\TP11.csproj",
-      "projectName": "TP11",
-      "projectPath": "D:\\Escritorio\\TP11\\TP11.csproj",
-      "packagesPath": "C:\\Users\\Santi Palma\\.nuget\\packages\\",
-      "outputPath": "D:\\Escritorio\\TP11\\obj\\",
->>>>>>> ca631ddad00cec8e54af7a7e0a1ff2487e6d6bbc
-=======
-      "projectUniqueName": "Z:\\ort2023\\prog\\TP11\\TP11.csproj",
-      "projectName": "TP11",
-      "projectPath": "Z:\\ort2023\\prog\\TP11\\TP11.csproj",
-      "packagesPath": "C:\\Users\\47490026\\.nuget\\packages\\",
-      "outputPath": "Z:\\ort2023\\prog\\TP11\\obj\\",
->>>>>>> 381785636493ae2fdb54bac86d66f8575443551d
+      "projectPath": "Z:\\programacion 2023\\TP11\\TP11.csproj",
+      "packagesPath": "C:\\Users\\47958668\\.nuget\\packages\\",
+      "outputPath": "Z:\\programacion 2023\\TP11\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "C:\\Users\\47573419\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\47958668\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
-        "C:\\Users\\Santi Palma\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> ca631ddad00cec8e54af7a7e0a1ff2487e6d6bbc
-=======
-        "C:\\Users\\47490026\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> 381785636493ae2fdb54bac86d66f8575443551d
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
