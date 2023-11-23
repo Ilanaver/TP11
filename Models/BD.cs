@@ -10,7 +10,7 @@ public static class BD {
     {
         using (SqlConnection BD = new SqlConnection(_connectionString))
         {
-            string sql = "INSERT INTO Usuario([username],[contraseña],[nombre],[email],[telefono]) VALUES(@Username,@Contraseña,@Nombre,@Email,@Telefono)";
+            string sql = "INSERT INTO Usuarioo([username],[contraseña],[nombre],[email],[telefono]) VALUES(@Username,@Contraseña,@Nombre,@Email,@Telefono)";
             BD.Execute(sql, new { Username = us.username, Contraseña = us.contraseña, Nombre = us.nombre, Email = us.email, Telefono = us.telefono });
         }
     }
