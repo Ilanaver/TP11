@@ -3,5 +3,9 @@ public class TituloXEquipo{
     public int IdEquipo{get;set;}
     public int IdTitulo{get;set;}
     public int Año{get;set;}
+    public string ImTitulo{get;set;}
+    public string NomTitulo{get;set;}
+    public string Nombre{get;set;}
+    public string Imagen{get;set;}
 
 }

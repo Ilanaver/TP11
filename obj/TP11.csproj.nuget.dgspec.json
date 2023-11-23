@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\prog\\TP11\\TP11.csproj": {}
+    "Z:\\2023\\programacion\\TP11-main\\TP11\\TP11.csproj": {}
   },
   "projects": {
-    "Z:\\prog\\TP11\\TP11.csproj": {
+    "Z:\\2023\\programacion\\TP11-main\\TP11\\TP11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\prog\\TP11\\TP11.csproj",
+        "projectUniqueName": "Z:\\2023\\programacion\\TP11-main\\TP11\\TP11.csproj",
         "projectName": "TP11",
-        "projectPath": "Z:\\prog\\TP11\\TP11.csproj",
-        "packagesPath": "C:\\Users\\47756465\\.nuget\\packages\\",
-        "outputPath": "Z:\\prog\\TP11\\obj\\",
+        "projectPath": "Z:\\2023\\programacion\\TP11-main\\TP11\\TP11.csproj",
+        "packagesPath": "C:\\Users\\47573419\\.nuget\\packages\\",
+        "outputPath": "Z:\\2023\\programacion\\TP11-main\\TP11\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\47756465\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\47573419\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -46,7 +46,7 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.1.15, )"
+              "version": "[2.1.21, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
