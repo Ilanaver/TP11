@@ -25,14 +25,19 @@ footer {
   padding: 0;
   box-sizing: border-box;
 }
+.container{
+display: flex;
+justify-content: center;
+}
 .Registro{
   width: 400px;
-  background: black;
+  background: rgb(2, 172, 2);
   padding: 30px;
   margin-top: 100px;
   border-radius: 4px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+ 
 
 }
 .Registro p{
@@ -41,7 +46,7 @@ footer {
 }
 .controls{
   width: 100%;
-  background: green;
+  background: white;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
@@ -63,11 +68,16 @@ footer {
   text-decoration: underline;
 }
 .Registro .botons{
-  width: 100%;
-  background: green;
+  width: 80%;
+  background: white;
   border: none;
+  border-radius: 4px;
   padding: 12px;
-  color: white;
+  color: green;
   margin: 16px 0;
   font-size: 16px-;
+}
+.Registro .botons :hover{
+  background-color: green;
+  transition: 1s;
 }
