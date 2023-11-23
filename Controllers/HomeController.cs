@@ -22,11 +22,13 @@ public class HomeController : Controller
         ViewBag.PrimerosJugadores=BD.GetTENPlayers();
         return View();
     }
+    /*
     public IActionResult Busqueda(string terminoBuscado)
     {
         ViewBag.ListaResultados=BD.Busqueda(terminoBuscado);
         return View();
     }
+    */
     public IActionResult InfoJugador(int IdJugador)
     {
         ViewBag.Jugador=BD.GetJugadorByID(IdJugador);
@@ -46,6 +48,9 @@ public class HomeController : Controller
         return View();
     }
 
+    
+    /*
+
     public IActionResult AgregarJugador()
     {
         ViewBag.ListaPaises=BD.GetPaises();
@@ -64,4 +69,5 @@ public class HomeController : Controller
         ViewBag.ListaEquipos=BD.GetEquipos();
         return View();
     }
+*/
 }
