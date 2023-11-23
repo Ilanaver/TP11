@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "SAmRFAbBn/abObTLzx/E/MoII/qS2qHPcTIF0d/QALM=",
+=======
+  "Hash": "KR76JTTFqZJMIJqHWO6rLWlRv2a8qdFB1JEGiGYtteg=",
+>>>>>>> ca631ddad00cec8e54af7a7e0a1ff2487e6d6bbc
   "Source": "TP11",
   "BasePath": "_content/TP11",
   "Mode": "Default",
@@ -10,17 +14,28 @@
     {
       "Name": "TP11\\wwwroot",
       "Source": "TP11",
+<<<<<<< HEAD
       "ContentRoot": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\",
+=======
+      "ContentRoot": "D:\\Escritorio\\TP11\\wwwroot\\",
+>>>>>>> ca631ddad00cec8e54af7a7e0a1ff2487e6d6bbc
       "BasePath": "_content/TP11",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
       "Identity": "Z:\\2023\\programacion\\TP11-main\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TP11.styles.css",
       "SourceId": "TP11",
       "SourceType": "Computed",
       "ContentRoot": "Z:\\2023\\programacion\\TP11-main\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+=======
+      "Identity": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TP11.styles.css",
+      "SourceId": "TP11",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+>>>>>>> ca631ddad00cec8e54af7a7e0a1ff2487e6d6bbc
       "BasePath": "_content/TP11",
       "RelativePath": "TP11.styles.css",
       "AssetKind": "All",
@@ -31,6 +46,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "Z:\\2023\\programacion\\TP11-main\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TP11.styles.css"
     },
     {
@@ -38,6 +54,15 @@
       "SourceId": "TP11",
       "SourceType": "Computed",
       "ContentRoot": "Z:\\2023\\programacion\\TP11-main\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+=======
+      "OriginalItemSpec": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TP11.styles.css"
+    },
+    {
+      "Identity": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
+      "SourceId": "TP11",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+>>>>>>> ca631ddad00cec8e54af7a7e0a1ff2487e6d6bbc
       "BasePath": "_content/TP11",
       "RelativePath": "TP11.bundle.scp.css",
       "AssetKind": "All",
@@ -48,6 +73,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "Z:\\2023\\programacion\\TP11-main\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css"
     },
     {
@@ -55,6 +81,15 @@
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\",
+=======
+      "OriginalItemSpec": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Escritorio\\TP11\\wwwroot\\css\\site.css",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Escritorio\\TP11\\wwwroot\\",
+>>>>>>> ca631ddad00cec8e54af7a7e0a1ff2487e6d6bbc
       "BasePath": "_content/TP11",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -68,10 +103,17 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\favicon.ico",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\",
+=======
+      "Identity": "D:\\Escritorio\\TP11\\wwwroot\\favicon.ico",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Escritorio\\TP11\\wwwroot\\",
+>>>>>>> ca631ddad00cec8e54af7a7e0a1ff2487e6d6bbc
       "BasePath": "_content/TP11",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -85,10 +127,17 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\imagenPrincipal.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\",
+=======
+      "Identity": "D:\\Escritorio\\TP11\\wwwroot\\imagenPrincipal.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Escritorio\\TP11\\wwwroot\\",
+>>>>>>> ca631ddad00cec8e54af7a7e0a1ff2487e6d6bbc
       "BasePath": "_content/TP11",
       "RelativePath": "imagenPrincipal.png",
       "AssetKind": "All",
@@ -102,10 +151,17 @@
       "OriginalItemSpec": "wwwroot\\imagenPrincipal.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\js\\site.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
       "ContentRoot": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\",
+=======
+      "Identity": "D:\\Escritorio\\TP11\\wwwroot\\js\\site.js",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Escritorio\\TP11\\wwwroot\\",
+>>>>>>> ca631ddad00cec8e54af7a7e0a1ff2487e6d6bbc
       "BasePath": "_content/TP11",
       "RelativePath": "js/site.js",
       "AssetKind": "All",

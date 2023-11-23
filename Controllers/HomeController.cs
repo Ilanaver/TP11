@@ -4,7 +4,20 @@ namespace TP11.Controllers;
 
 public class HomeController : Controller
 {
-    public IActionResult Index()
+        public IActionResult Index()
+    {
+        return View();
+    }
+    
+    public IActionResult Registro()
+    {
+        return View();
+    }
+    public IActionResult CambiarContraseña()
+    {
+        return View();
+    }
+    public IActionResult Inicio()
     {
         ViewBag.PrimerosJugadores=BD.GetTENPlayers();
         return View();
@@ -23,6 +36,7 @@ public class HomeController : Controller
     {
         ViewBag.Equipo=BD.GetEquipoByID(IdEquipo);
         ViewBag.TitulosEquipo=BD.GetTitulosByEquipo(IdEquipo);
+        ViewBag.ListaJugadores=BD.GetJugadoresByEquipo(IdEquipo);
         return View();
     }
     public IActionResult Perfil(int IdUsuario)
@@ -31,10 +45,16 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult AgregarJugador(int IdUsuario)
+    public IActionResult AgregarJugador()
     {
-        /*ViewBag.ListaPaises=BD.;
-        ViewBag.ListaEquipos=BD.*/
+        /*ViewBag.ListaPaises=BD.GetPaises();
+        ViewBag.ListaEquipos=BD.GetEquipos()*/
         return View();
     }
+    public IActionResult GuardarJugador(Jugador jug)
+    {
+        BD.InsertarJugador(jug);
+        return RedirectToAction("InfoJugador",new{IdJugador=jug.IdJugador});
+    }
+
 }

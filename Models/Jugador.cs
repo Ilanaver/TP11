@@ -3,7 +3,7 @@ public class Jugador{
     public int IdPais{get;set;}
     public int IdEquipoActual{get;set;}
     public string Nombre{get;set;}
-    public string Imagen{get;set;}
+    public string ImagenJugador{get;set;}
     public int Edad{get;set;}
     public string Descripcion{get;set;}
     public string Posicion{get;set;}
