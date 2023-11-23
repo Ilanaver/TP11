@@ -19,8 +19,8 @@
 <img src="@ViewBag.Jugador.ImEquipo" alt="">
 <h1>Dislikes: @ViewBag.Jugador.Dislikes</h1>
 
-@foreach (TituloXEquipo item in ViewBag.TitulosJugador)
+@foreach (TituloXJugador item in ViewBag.TitulosJugador)
 {
-    <p>@item.NomTitulo</p>
-     <img src="@item.ImTitulo" alt="">
+    <p>@item.Nombre</p>
+     <img src="@item.Imagen" alt="">
 }

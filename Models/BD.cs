@@ -124,7 +124,7 @@ public static class BD {
         List<TituloXJugador> ListaTitulos = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "GetTitulosByJugador";
-            ListaTitulos = db.Query<TituloXJugador>(sp, new { IdJugador = idJugador}, commandType: CommandType.StoredProcedure).ToList();
+            ListaTitulos = db.Query<TituloXJugador>(sp, new { idJugador = idJugador}, commandType: CommandType.StoredProcedure).ToList();
         }
         return ListaTitulos;
     }

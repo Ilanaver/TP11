@@ -47,6 +47,8 @@ public class HomeController : Controller
         ViewBag.Perfil=BD.GetUsuarioByID(IdUsuario);
         return View();
     }
+    
+
     public IActionResult AgregarJugador()
     {
         ViewBag.ListaPaises=BD.GetPaises();
