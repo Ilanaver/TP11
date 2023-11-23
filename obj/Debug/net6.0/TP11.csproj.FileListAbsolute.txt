@@ -37,6 +37,7 @@ Z:\programacion 2023\TP11\obj\Debug\net6.0\refint\TP11.dll
 Z:\programacion 2023\TP11\obj\Debug\net6.0\TP11.pdb
 Z:\programacion 2023\TP11\obj\Debug\net6.0\TP11.genruntimeconfig.cache
 Z:\programacion 2023\TP11\obj\Debug\net6.0\ref\TP11.dll
+<<<<<<< HEAD
 D:\Escritorio\TP11\bin\Debug\net6.0\appsettings.Development.json
 D:\Escritorio\TP11\bin\Debug\net6.0\appsettings.json
 D:\Escritorio\TP11\bin\Debug\net6.0\TP11.staticwebassets.runtime.json
@@ -115,3 +116,5 @@ Z:\ort2023\prog\TP11\obj\Debug\net6.0\refint\TP11.dll
 Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.pdb
 Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.genruntimeconfig.cache
 Z:\ort2023\prog\TP11\obj\Debug\net6.0\ref\TP11.dll
+=======
+>>>>>>> 1ee455d89e9aa5c2f7eaa7aa15cf6384be5bf2f8

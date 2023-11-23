@@ -1,11 +1,28 @@
 
 <h1>@ViewBag.Jugador.Nombre</h1>
+<img src="@ViewBag.Jugador.Imagen" alt="">
+<img src="@ViewBag.Jugador.ImEquipo" alt="">
+<p>@ViewBag.Jugador.Nombre</p>
 <img src="@ViewBag.Jugador.ImagenJugador" alt="">
 <h1>Edad: @ViewBag.Jugador.Edad</h1>
-<h1>@ViewBag.Jugador.Descripcion</h1>
 <h1>Posicion: @ViewBag.Jugador.Posicion</h1>
+
+<h1>Descripcion: @ViewBag.Jugador.Descripcion</h1>
 <h1>Partidos jugados: @ViewBag.Jugador.PartidosJugados</h1>
 <h1>Goles: @ViewBag.Jugador.Goles</h1>
+
+
+<p>  @ViewBag.Jugador.ImPais</p>
+<p>Pais: @ViewBag.Jugador.IdPais</p>
+<p>EquipoActual: @ViewBag.Jugador.IdEquipoActual</p>
+<p>@ViewBag.Jugador.ImEquipo</p>
+
 <h1>Likes: @ViewBag.Jugador.Likes</h1>
 <img src="@ViewBag.Jugador.ImEquipo" alt="">
 <h1>Dislikes: @ViewBag.Jugador.Dislikes</h1>
+
+@foreach (var item in ViewBag.TituloXJugador)
+{
+    <p>@item.NomTitulo</p>
+     <img src="@item.ImTitulo" alt="">
+}

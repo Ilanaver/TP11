@@ -6,11 +6,9 @@ namespace TP11.Models;
 public static class BD {
     public static string _connectionString = @"Server=localhost;DataBase=FuthubBD;Trusted_Connection=True;";
     
-    private static string connectionString = @"Server=localhost;DataBase=ingreso;Trusted_Connection=True;";
-
-    public static void CrearUsuario(Usuarioo us)
+   public static void CrearUsuario(Usuario us)
     {
-        using (SqlConnection BD = new SqlConnection(connectionString))
+        using (SqlConnection BD = new SqlConnection(_connectionString))
         {
             string sql = "INSERT INTO Usuario([username],[contraseña],[nombre],[email],[telefono]) VALUES(@Username,@Contraseña,@Nombre,@Email,@Telefono)";
             BD.Execute(sql, new { Username = us.username, Contraseña = us.contraseña, Nombre = us.nombre, Email = us.email, Telefono = us.telefono });
@@ -19,20 +17,20 @@ public static class BD {
 
     public static void CambiarContraseña(string Username, string nuevaContraseña)
     {
-        using (SqlConnection BD = new SqlConnection(connectionString))
+        using (SqlConnection BD = new SqlConnection(_connectionString))
         {
             string sql = "UPDATE Usuario SET contraseña=@NuevaContraseña where username= @username";
             BD.Execute(sql, new { NuevaContraseña = nuevaContraseña, username = Username });
         }
     }
 
-    public static Usuarioo mostrarDatos(int IdUsuario, string username, string nombre, string email, int telefono)
+    public static Usuario mostrarDatos(int IdUsuario, string username, string nombre, string email, int telefono)
     {
-        Usuarioo us = null;
-        using (SqlConnection BD = new SqlConnection(connectionString))
+        Usuario us = null;
+        using (SqlConnection BD = new SqlConnection(_connectionString))
         {
             string sql = "SELECT username, nombre, email, telefono from Usuario where idUsuario=@IDusuario";
-            us = BD.QueryFirstOrDefault<Usuarioo>(sql, new { IdUsuario = IdUsuario });
+            us = BD.QueryFirstOrDefault<Usuario>(sql, new { IdUsuario = IdUsuario });
         }
         return us;
     }
@@ -40,7 +38,7 @@ public static class BD {
     public static string GetContraseñaPorUsername(string username)
     {
         string contraseña;
-        using (SqlConnection BD = new SqlConnection(connectionString))
+        using (SqlConnection BD = new SqlConnection(_connectionString))
         {
             string sql = "SELECT contraseña FROM Usuario WHERE username=@Username";
             contraseña = BD.QueryFirstOrDefault<string>(sql, new { Username = username });
@@ -174,4 +172,5 @@ public static class BD {
         }
         return ListaEquipos;
     }
+    
 }
