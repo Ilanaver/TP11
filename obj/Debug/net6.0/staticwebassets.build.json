@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KR76JTTFqZJMIJqHWO6rLWlRv2a8qdFB1JEGiGYtteg=",
+  "Hash": "qNsHgXdHWpYkWqoacXFjbvtg+B6vs/N5C/AWwa8qSVA=",
   "Source": "TP11",
   "BasePath": "_content/TP11",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TP11\\wwwroot",
       "Source": "TP11",
-      "ContentRoot": "D:\\Escritorio\\TP11\\wwwroot\\",
+      "ContentRoot": "Z:\\ort2023\\prog\\TP11\\wwwroot\\",
       "BasePath": "_content/TP11",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TP11.styles.css",
+      "Identity": "Z:\\ort2023\\prog\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TP11.styles.css",
       "SourceId": "TP11",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "Z:\\ort2023\\prog\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TP11",
       "RelativePath": "TP11.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TP11.styles.css"
+      "OriginalItemSpec": "Z:\\ort2023\\prog\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TP11.styles.css"
     },
     {
-      "Identity": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
+      "Identity": "Z:\\ort2023\\prog\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
       "SourceId": "TP11",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "Z:\\ort2023\\prog\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TP11",
       "RelativePath": "TP11.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Escritorio\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css"
+      "OriginalItemSpec": "Z:\\ort2023\\prog\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Escritorio\\TP11\\wwwroot\\css\\site.css",
+      "Identity": "Z:\\ort2023\\prog\\TP11\\wwwroot\\css\\site.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Escritorio\\TP11\\wwwroot\\",
+      "ContentRoot": "Z:\\ort2023\\prog\\TP11\\wwwroot\\",
       "BasePath": "_content/TP11",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Escritorio\\TP11\\wwwroot\\favicon.ico",
+      "Identity": "Z:\\ort2023\\prog\\TP11\\wwwroot\\favicon.ico",
       "SourceId": "TP11",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Escritorio\\TP11\\wwwroot\\",
+      "ContentRoot": "Z:\\ort2023\\prog\\TP11\\wwwroot\\",
       "BasePath": "_content/TP11",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Escritorio\\TP11\\wwwroot\\imagenPrincipal.png",
+      "Identity": "Z:\\ort2023\\prog\\TP11\\wwwroot\\imagenPrincipal.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Escritorio\\TP11\\wwwroot\\",
+      "ContentRoot": "Z:\\ort2023\\prog\\TP11\\wwwroot\\",
       "BasePath": "_content/TP11",
       "RelativePath": "imagenPrincipal.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\imagenPrincipal.png"
     },
     {
-      "Identity": "D:\\Escritorio\\TP11\\wwwroot\\js\\site.js",
+      "Identity": "Z:\\ort2023\\prog\\TP11\\wwwroot\\js\\site.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Escritorio\\TP11\\wwwroot\\",
+      "ContentRoot": "Z:\\ort2023\\prog\\TP11\\wwwroot\\",
       "BasePath": "_content/TP11",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
