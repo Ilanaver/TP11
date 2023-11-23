@@ -131,7 +131,7 @@ public static class BD {
         return ListaTitulos;
     }
 
-    public static void CrearJugador(Jugador jug){
+    public static void InsertarJugador(Jugador jug){
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "CrearJugador";
             db.Execute(sp, new {idPais=jug.IdPais,idEquipo=jug.IdEquipoActual,nom=jug.Nombre,
