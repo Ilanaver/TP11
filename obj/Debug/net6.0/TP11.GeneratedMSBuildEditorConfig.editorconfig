@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TP11
 build_property.RootNamespace = TP11
-build_property.ProjectDir = Z:\programacion 2023\TP11\
+build_property.ProjectDir = Z:\2023\programacion\TP11-main\TP11\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = Z:\programacion 2023\TP11
+build_property.MSBuildProjectDirectory = Z:\2023\programacion\TP11-main\TP11
 build_property._RazorSourceGeneratorDebug = 
 
-[Z:/programacion 2023/TP11/Views/Home/CambiarContraseña.cshtml]
+[Z:/2023/programacion/TP11-main/TP11/Views/Home/CambiarContraseña.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYW1iaWFyQ29udHJhc2XDsWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/programacion 2023/TP11/Views/Home/Index.cshtml]
+[Z:/2023/programacion/TP11-main/TP11/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/programacion 2023/TP11/Views/Home/InfoEquipo.cshtml]
+[Z:/2023/programacion/TP11-main/TP11/Views/Home/InfoEquipo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmZvRXF1aXBvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/programacion 2023/TP11/Views/Home/InfoJugador.cshtml]
+[Z:/2023/programacion/TP11-main/TP11/Views/Home/InfoJugador.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmZvSnVnYWRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/programacion 2023/TP11/Views/Home/Inicio.cshtml]
+[Z:/2023/programacion/TP11-main/TP11/Views/Home/Inicio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmljaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/programacion 2023/TP11/Views/Home/PaginaInicial.cshtml]
+[Z:/2023/programacion/TP11-main/TP11/Views/Home/PaginaInicial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdpbmFJbmljaWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/programacion 2023/TP11/Views/Home/Registro.cshtml]
+[Z:/2023/programacion/TP11-main/TP11/Views/Home/Registro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/programacion 2023/TP11/Views/Shared/Error.cshtml]
+[Z:/2023/programacion/TP11-main/TP11/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/programacion 2023/TP11/Views/Shared/_ValidationScriptsPartial.cshtml]
+[Z:/2023/programacion/TP11-main/TP11/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/programacion 2023/TP11/Views/_ViewImports.cshtml]
+[Z:/2023/programacion/TP11-main/TP11/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/programacion 2023/TP11/Views/_ViewStart.cshtml]
+[Z:/2023/programacion/TP11-main/TP11/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/programacion 2023/TP11/Views/Shared/_Layout.cshtml]
+[Z:/2023/programacion/TP11-main/TP11/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-crqzjy7pi9

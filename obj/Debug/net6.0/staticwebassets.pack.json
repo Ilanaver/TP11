@@ -1,6 +1,25 @@
 {
   "Files": [
     {
+<<<<<<< HEAD
+      "Id": "Z:\\2023\\programacion\\TP11-main\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TP11.bundle.scp.css"
+    },
+    {
+      "Id": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\imagenPrincipal.png",
+      "PackagePath": "staticwebassets\\imagenPrincipal.png"
+    },
+    {
+      "Id": "Z:\\2023\\programacion\\TP11-main\\TP11\\wwwroot\\js\\site.js",
+=======
       "Id": "Z:\\programacion 2023\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
       "PackagePath": "staticwebassets\\TP11.bundle.scp.css"
     },
@@ -18,6 +37,7 @@
     },
     {
       "Id": "Z:\\programacion 2023\\TP11\\wwwroot\\js\\site.js",
+>>>>>>> ac7c89319370745524f9f06335219b4511aac23e
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {

@@ -1,3 +1,44 @@
+<<<<<<< HEAD
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\appsettings.Development.json
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\appsettings.json
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\TP11.staticwebassets.runtime.json
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\TP11.exe
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\TP11.deps.json
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\TP11.runtimeconfig.json
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\TP11.dll
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\TP11.pdb
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\Dapper.dll
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\System.Data.SqlClient.dll
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+Z:\2023\programacion\TP11-main\TP11\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\TP11.csproj.AssemblyReference.cache
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\TP11.GeneratedMSBuildEditorConfig.editorconfig
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\TP11.AssemblyInfoInputs.cache
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\TP11.AssemblyInfo.cs
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\TP11.csproj.CoreCompileInputs.cache
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\TP11.MvcApplicationPartsAssemblyInfo.cache
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\TP11.RazorAssemblyInfo.cache
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\TP11.RazorAssemblyInfo.cs
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\staticwebassets\msbuild.TP11.Microsoft.AspNetCore.StaticWebAssets.props
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\staticwebassets\msbuild.build.TP11.props
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TP11.props
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TP11.props
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\staticwebassets.pack.json
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\staticwebassets.build.json
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\staticwebassets.development.json
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\scopedcss\bundle\TP11.styles.css
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\scopedcss\projectbundle\TP11.bundle.scp.css
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\TP11.csproj.CopyComplete
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\TP11.dll
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\refint\TP11.dll
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\TP11.pdb
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\TP11.genruntimeconfig.cache
+Z:\2023\programacion\TP11-main\TP11\obj\Debug\net6.0\ref\TP11.dll
+=======
 Z:\programacion 2023\TP11\bin\Debug\net6.0\appsettings.Development.json
 Z:\programacion 2023\TP11\bin\Debug\net6.0\appsettings.json
 Z:\programacion 2023\TP11\bin\Debug\net6.0\TP11.staticwebassets.runtime.json
@@ -37,3 +78,4 @@ Z:\programacion 2023\TP11\obj\Debug\net6.0\refint\TP11.dll
 Z:\programacion 2023\TP11\obj\Debug\net6.0\TP11.pdb
 Z:\programacion 2023\TP11\obj\Debug\net6.0\TP11.genruntimeconfig.cache
 Z:\programacion 2023\TP11\obj\Debug\net6.0\ref\TP11.dll
+>>>>>>> ac7c89319370745524f9f06335219b4511aac23e
