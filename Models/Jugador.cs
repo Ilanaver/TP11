@@ -14,4 +14,6 @@ public class Jugador{
     public string ImEquipo{get;set;}
     public string ImPais{get;set;}
 
+    
+
 }
