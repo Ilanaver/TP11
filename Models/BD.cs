@@ -146,31 +146,11 @@ public static class BD {
         }
     }
 
-    public static List<ResultadoBusqueda> Busqueda(string buscado){
-        List<ResultadoBusqueda> ListaResultados = null;
+    public static void Busqueda(string buscado){
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "Busqueda";
-            ListaResultados = db.Query<ResultadoBusqueda>(sp, new {terminoBuscado=buscado}, commandType: CommandType.StoredProcedure).ToList();
+            db.Execute(sp, new {terminoBuscado=buscado}, commandType: CommandType.StoredProcedure);
         }
-        return ListaResultados;
-    }
-
-    public static List<Pais> GetPaises(){
-        List<Pais> ListaPaises = null;
-        using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sp = "GetPaises";
-            ListaPaises = db.Query<Pais>(sp, commandType: CommandType.StoredProcedure).ToList();
-        }
-        return ListaPaises;
-    }
-
-    public static List<Equipo> GetEquipos(){
-        List<Equipo> ListaEquipos = null;
-        using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sp = "GetEquipos";
-            ListaEquipos = db.Query<Equipo>(sp, commandType: CommandType.StoredProcedure).ToList();
-        }
-        return ListaEquipos;
     }
     
 }
