@@ -79,3 +79,19 @@ Z:\programacion 2023\TP11\obj\Debug\net6.0\TP11.pdb
 Z:\programacion 2023\TP11\obj\Debug\net6.0\TP11.genruntimeconfig.cache
 Z:\programacion 2023\TP11\obj\Debug\net6.0\ref\TP11.dll
 >>>>>>> 7aebc2e1b8ce0bf3bd25a77a3527f602c0b37732
+D:\prog4\TP11\obj\Debug\net6.0\TP11.csproj.AssemblyReference.cache
+D:\prog4\TP11\obj\Debug\net6.0\TP11.GeneratedMSBuildEditorConfig.editorconfig
+D:\prog4\TP11\obj\Debug\net6.0\TP11.AssemblyInfoInputs.cache
+D:\prog4\TP11\obj\Debug\net6.0\TP11.AssemblyInfo.cs
+D:\prog4\TP11\obj\Debug\net6.0\TP11.csproj.CoreCompileInputs.cache
+D:\prog4\TP11\obj\Debug\net6.0\TP11.MvcApplicationPartsAssemblyInfo.cache
+D:\prog4\TP11\obj\Debug\net6.0\TP11.RazorAssemblyInfo.cache
+D:\prog4\TP11\obj\Debug\net6.0\TP11.RazorAssemblyInfo.cs
+D:\prog4\TP11\obj\Debug\net6.0\staticwebassets\msbuild.TP11.Microsoft.AspNetCore.StaticWebAssets.props
+D:\prog4\TP11\obj\Debug\net6.0\staticwebassets\msbuild.build.TP11.props
+D:\prog4\TP11\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TP11.props
+D:\prog4\TP11\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TP11.props
+D:\prog4\TP11\obj\Debug\net6.0\staticwebassets.pack.json
+D:\prog4\TP11\obj\Debug\net6.0\TP11.dll
+D:\prog4\TP11\obj\Debug\net6.0\refint\TP11.dll
+D:\prog4\TP11\obj\Debug\net6.0\TP11.pdb
