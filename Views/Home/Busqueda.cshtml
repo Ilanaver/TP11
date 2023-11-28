@@ -1,4 +1,210 @@
-@foreach(ResultadoBusqueda item in ViewBag.ListaResultados){
-<h1>@item.Nombre</h1>
-    
-}
+<ul class="listaBusqueda">
+    @foreach (ResultadoBusqueda item in ViewBag.ListaResultados)
+    {
+        <li>
+            <a href='@{
+                if(item.Tipo == "A")
+                    @Url.Action("InfoJugador", "Home", new { IdJugador = item.IdRegistro })
+                else
+                    @Url.Action("InfoEquipo", "Home", new { IdEquipo = item.IdRegistro })
+            }'>
+                <div class="filaBusqueda">
+                    <p>@item.Nombre</p>
+                    <img src="@item.Imagen" alt="">
+                    <img src="@item.ImagenPais" alt="">
+                </div>
+            </a>
+        </li>
+    }
+</ul>
+
+
+<table id="posiciones" class="tablesorter1">
+    <thead>
+        <tr style="background: black; color: white">
+            <th>#</th>
+            <th>Equipo</th>
+            <th class="pts">Pts</th>
+            <th class="pj">PJ</th>
+            <th class="pg">PG</th>
+            <th class="pe">PE</th>
+            <th class="pp">PP</th>
+            <th class="gf">GF</th>
+            <th class="gc">GC</th>
+            <th class="dg">DIF</th>
+
+
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="ipr" name="11">
+            <td class="cp1">1</td>
+            <td align="left"><img src="images/18/11.png">Huracan</td>
+            <td>26</td>
+            <td>14</td>
+            <td>8</td>
+            <td>2</td>
+            <td>4</td>
+            <td>19</td>
+            <td>11</td>
+            <td>+8</td>
+        </tr>
+        <tr class="pr" name="18">
+            <td class="cp1">2</td>
+            <td align="left"><img src="images/18/18.png">River Plate</td>
+            <td>24</td>
+            <td>14</td>
+            <td>7</td>
+            <td>3</td>
+            <td>4</td>
+            <td>24</td>
+            <td>16</td>
+            <td>+8</td>
+        </tr>
+        <tr class="ipr" name="5">
+            <td class="cp1">3</td>
+            <td align="left"><img src="images/18/5.png">Banfield</td>
+            <td>23</td>
+            <td>14</td>
+            <td>6</td>
+            <td>5</td>
+            <td>3</td>
+            <td>11</td>
+            <td>6</td>
+            <td>+5</td>
+        </tr>
+        <tr class="pr" name="35">
+            <td class="cp1">4</td>
+            <td align="left"><img src="images/18/35.png">Rosario Central</td>
+            <td>23</td>
+            <td>14</td>
+            <td>6</td>
+            <td>5</td>
+            <td>3</td>
+            <td>17</td>
+            <td>13</td>
+            <td>+4</td>
+        </tr>
+        <tr class="ipr" name="12">
+            <td>5</td>
+            <td align="left"><img src="images/18/12.png">Independiente</td>
+            <td>23</td>
+            <td>14</td>
+            <td>6</td>
+            <td>5</td>
+            <td>3</td>
+            <td>15</td>
+            <td>11</td>
+            <td>+4</td>
+        </tr>
+        <tr class="pr" name="21">
+            <td>6</td>
+            <td align="left"><img src="images/18/21.png">Velez</td>
+            <td>22</td>
+            <td>14</td>
+            <td>6</td>
+            <td>4</td>
+            <td>4</td>
+            <td>17</td>
+            <td>14</td>
+            <td>+3</td>
+        </tr>
+        <tr class="ipr" name="33">
+            <td>7</td>
+            <td align="left"><img src="images/18/33.png">Instituto</td>
+            <td>20</td>
+            <td>14</td>
+            <td>4</td>
+            <td>8</td>
+            <td>2</td>
+            <td>11</td>
+            <td>7</td>
+            <td>+4</td>
+        </tr>
+        <tr class="pr" name="7">
+            <td>8</td>
+            <td align="left"><img src="images/18/7.png">Colon</td>
+            <td>20</td>
+            <td>14</td>
+            <td>6</td>
+            <td>2</td>
+            <td>6</td>
+            <td>19</td>
+            <td>17</td>
+            <td>+2</td>
+        </tr>
+        <tr class="ipr" name="52">
+            <td>9</td>
+            <td align="left"><img src="images/18/52.png">Talleres (C)</td>
+            <td>17</td>
+            <td>14</td>
+            <td>4</td>
+            <td>5</td>
+            <td>5</td>
+            <td>15</td>
+            <td>15</td>
+            <td>0</td>
+        </tr>
+        <tr class="pr" name="25">
+            <td>10</td>
+            <td align="left"><img src="images/18/25.png">Atl Tucuman</td>
+            <td>17</td>
+            <td>14</td>
+            <td>4</td>
+            <td>5</td>
+            <td>5</td>
+            <td>9</td>
+            <td>12</td>
+            <td>-3</td>
+        </tr>
+        <tr class="ipr" name="9">
+            <td>11</td>
+            <td align="left"><img src="images/18/9.png">Gimnasia (LP)</td>
+            <td>15</td>
+            <td>14</td>
+            <td>4</td>
+            <td>3</td>
+            <td>7</td>
+            <td>13</td>
+            <td>21</td>
+            <td>-8</td>
+        </tr>
+        <tr class="pr" name="3">
+            <td>12</td>
+            <td align="left"><img src="images/18/3.png">Argentinos</td>
+            <td>13</td>
+            <td>13</td>
+            <td>3</td>
+            <td>4</td>
+            <td>6</td>
+            <td>18</td>
+            <td>22</td>
+            <td>-4</td>
+        </tr>
+        <tr class="ipr" name="4">
+            <td>13</td>
+            <td align="left"><img src="images/18/4.png">Arsenal</td>
+            <td>13</td>
+            <td>14</td>
+            <td>3</td>
+            <td>4</td>
+            <td>7</td>
+            <td>10</td>
+            <td>15</td>
+            <td>-5</td>
+        </tr>
+        <tr class="pr" name="82">
+            <td>14</td>
+            <td align="left"><img src="images/18/82.png">Barracas Central</td>
+            <td>13</td>
+            <td>13</td>
+            <td>3</td>
+            <td>4</td>
+            <td>6</td>
+            <td>9</td>
+            <td>20</td>
+            <td>-11</td>
+        </tr>
+    </tbody>
+</table>

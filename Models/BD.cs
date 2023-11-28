@@ -143,6 +143,7 @@ public static class BD {
             Goles = jug.Goles,
             Likes = jug.Likes,
             Dislikes = jug.Dislikes}, commandType: CommandType.StoredProcedure);
+             
         }
     }
 
