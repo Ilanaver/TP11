@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vXCGupNpBm3iZbpvKFNwX7uChfFKFhLPu7p4tkuwetKY2tZWIRg5mBYh+Vp6Mh1Kqbn8bBKXySJUuMnTlIPs/w==",
+  "dgSpecHash": "+d7bduQuv5sMwqZlseajufEEwgXBeqMeyuh7/7eZDnWCT3MJ2Rg3h7ycestxE0F2AeUII/Pg0J9mePrGKCcPDw==",
   "success": true,
-  "projectFilePath": "Z:\\programacion 2023\\TP11\\TP11.csproj",
+  "projectFilePath": "Z:\\programacion 2023\\TP11-1\\TP11.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\47958668\\.nuget\\packages\\dapper\\2.1.24\\dapper.2.1.24.nupkg.sha512",
     "C:\\Users\\47958668\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

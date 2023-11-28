@@ -58,7 +58,7 @@ public class HomeController : Controller
     public IActionResult GuardarJugador(Jugador jug)
     {
         BD.InsertarJugador(jug);
-        return RedirectToAction("InfoJugador",new{IdJugador=jug.IdJugador});
+        return RedirectToAction ("InfoJugador",new{IdJugador=jug.IdJugador});
     }
 
     public IActionResult AgregarTituloJugador()
