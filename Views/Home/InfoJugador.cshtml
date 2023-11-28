@@ -19,8 +19,28 @@
 <img src="@ViewBag.Jugador.ImEquipo" alt="">
 <h1>Dislikes: @ViewBag.Jugador.Dislikes</h1>
 
+<h2>Titulos:</h2>
 @foreach (TituloXJugador item in ViewBag.TitulosJugador)
 {
     <p>@item.Nombre</p>
      <img src="@item.Imagen" alt="">
 }
+
+<h1>Comentarios:</h1>
+@foreach (Comentario item in ViewBag.ComentariosJugador)
+{
+    <p>@item.Contenido</p>
+    <p>@item.Likes</p>
+
+}
+
+<a href='@Url.Action("Inicio", "Home")'>Volver al inicio</a>
+<h1>Agregar Comentario</h1>
+<form action='@Url.Action("AgregarComentario","Home")' >
+    <input type="hidden" name="IdJugador" value="@ViewBag.Jugador.IdJugador" >
+    <input type="hidden" name="IdUsuario" value="">
+    <input class="controls" autocomplete="off" type="text" name="Contenido" required placeholder="Ingrese el comentario">
+    <input class="botons" type="submit" value="Cargar" >
+
+    <p id="errorIngreso"></p>
+</form>

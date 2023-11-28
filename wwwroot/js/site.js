@@ -17,3 +17,34 @@ function verificarContraseña() {
 
 }
 
+function hola(params) {
+    Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Your work has been saved",
+        showConfirmButton: false,
+        timer: 1500
+      });
+}
+
+function estoyDeAcuerdo(){
+    (async () => {
+        const { value: accept } = await Swal.fire({
+          title: "Terms and conditions",
+          input: "checkbox",
+          inputValue: 1,
+          inputPlaceholder: `
+            I agree with the terms and conditions
+          `,
+          confirmButtonText: `
+            Continue&nbsp;<i class="fa fa-arrow-right"></i>
+          `,
+          inputValidator: (result) => {
+            return !result && "You need to agree with T&C";
+          }
+        });
+        if (accept) {
+          Swal.fire("You agreed with T&C :)");
+        }
+      })()
+}

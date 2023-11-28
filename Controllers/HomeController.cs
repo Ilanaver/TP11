@@ -33,6 +33,7 @@ public class HomeController : Controller
     {
         ViewBag.Jugador=BD.GetJugadorByID(IdJugador);
         ViewBag.TitulosJugador=BD.GetTitulosByJugador(IdJugador);
+        ViewBag.ComentariosJugador=BD.GetComentarioByJugador(IdJugador);
         return View();
     }
     public IActionResult InfoEquipo(int IdEquipo)
@@ -58,7 +59,7 @@ public class HomeController : Controller
     public IActionResult GuardarJugador(Jugador jug)
     {
         BD.InsertarJugador(jug);
-        return RedirectToAction("InfoJugador",new{IdJugador=jug.IdJugador});
+        return RedirectToAction ("InfoJugador",new{IdJugador=jug.IdJugador});
     }
 
     public IActionResult AgregarTituloJugador()
@@ -66,6 +67,12 @@ public class HomeController : Controller
         ViewBag.ListaPaises=BD.GetPaises();
         ViewBag.ListaEquipos=BD.GetEquipos();
         return View();
+    }
+
+    public IActionResult AgregarComentario(Comentario com)
+    {
+        BD.InsertarComentario(com);
+        return RedirectToAction ("InfoJugador",new{IdJugador=com.IdJugador});
     }
 
 }

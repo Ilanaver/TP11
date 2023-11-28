@@ -4,14 +4,14 @@ using System.Data;
 namespace TP11.Models;
 
 public static class BD {
-    public static string _connectionString = @"Server=localhost;DataBase=FuthubBD;Trusted_Connection=True;";
+    public static string _connectionString = @"Server=DESKTOP-K5G1LDU\SQLEXPRESS;DataBase=FuthubBD;Trusted_Connection=True;";
     
    public static void CrearUsuario(Usuario us)
     {
         using (SqlConnection BD = new SqlConnection(_connectionString))
         {
-            string sql = "INSERT INTO Usuarioo([username],[contraseña],[nombre],[email],[telefono]) VALUES(@Username,@Contraseña,@Nombre,@Email,@Telefono)";
-            BD.Execute(sql, new { Username = us.username, Contraseña = us.contraseña, Nombre = us.nombre, Email = us.email, Telefono = us.telefono });
+            string sql = "INSERT INTO Usuario([username],[contraseña],[mail]) VALUES(@Username,@Contraseña,@mail)";
+            BD.Execute(sql, new { username = us.username, contraseña = us.contraseña, mail = us.mail});
         }
     }
 
@@ -171,6 +171,13 @@ public static class BD {
             ListaEquipos = db.Query<Equipo>(sp, commandType: CommandType.StoredProcedure).ToList();
         }
         return ListaEquipos;
+    }
+
+    public static void InsertarComentario(Comentario com){
+         using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "InsertarComentario";
+            db.Execute(sp, new {idUsuario = 2,idJugador = com.IdJugador,Contenido=com.Contenido,Likes = 0}, commandType: CommandType.StoredProcedure);
+        }
     }
     
 }
