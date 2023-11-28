@@ -10,8 +10,8 @@ public static class BD {
     {
         using (SqlConnection BD = new SqlConnection(_connectionString))
         {
-            string sql = "INSERT INTO Usuario([username],[contraseña],[nombre],[email],[telefono]) VALUES(@Username,@Contraseña,@Nombre,@Email,@Telefono)";
-            BD.Execute(sql, new { username = us.username, contraseña = us.contraseña, nombre = us.nombre, email = us.email, telefono = us.telefono });
+            string sql = "INSERT INTO Usuario([username],[contraseña],[mail]) VALUES(@Username,@Contraseña,@mail)";
+            BD.Execute(sql, new { username = us.username, contraseña = us.contraseña, mail = us.mail});
         }
     }
 
@@ -176,11 +176,7 @@ public static class BD {
     public static void InsertarComentario(Comentario com){
          using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "InsertarComentario";
-            db.Execute(sp, new {IdUsuario = 2,
-            IdJugador = com.IdJugador,
-            Contenido=com.Contenido,
-            Likes = 0,
-            }, commandType: CommandType.StoredProcedure);
+            db.Execute(sp, new {IdUsuario = 2,IdJugador = com.IdJugador,Contenido=com.Contenido,Likes = 0}, commandType: CommandType.StoredProcedure);
         }
     }
     
