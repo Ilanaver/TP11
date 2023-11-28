@@ -11,7 +11,7 @@ public static class BD {
         using (SqlConnection BD = new SqlConnection(_connectionString))
         {
             string sql = "INSERT INTO Usuario([username],[contraseña],[nombre],[email],[telefono]) VALUES(@Username,@Contraseña,@Nombre,@Email,@Telefono)";
-            BD.Execute(sql, new { Username = us.username, Contraseña = us.contraseña, Nombre = us.nombre, Email = us.email, Telefono = us.telefono });
+            BD.Execute(sql, new { username = us.username, contraseña = us.contraseña, nombre = us.nombre, email = us.email, telefono = us.telefono });
         }
     }
 
@@ -88,13 +88,13 @@ public static class BD {
         }
         return ListaJugadores;
     }
-    public static List<Comentario> GetComentarioByJugador(int idJugador){
-        List<Comentario> ListaComentarios = null;
+    public static Comentario GetComentarioByJugador(int idJugador){
+        Comentario UnComentario = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "GetComentarioByJugador";
-            ListaComentarios = db.Query<Comentario>(sp, new { IdJugador = idJugador}, commandType: CommandType.StoredProcedure).ToList();
+            UnComentario = db.QueryFirstOrDefault<Comentario>(sp, new { IdJugador = idJugador}, commandType: CommandType.StoredProcedure);
         }
-        return ListaComentarios;
+        return UnComentario;
     }
     public static List<Equipo> GetEquiposByPais(int idPais){
         List<Equipo> ListaEquipos = null;

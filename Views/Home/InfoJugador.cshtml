@@ -26,4 +26,12 @@
      <img src="@item.Imagen" alt="">
 }
 
+@foreach (Comentario item in ViewBag.ComentariosJugador)
+{
+    <p>@item.Contenido</p>
+        <p>@item.Likes</p>
+
+}
+
 <a href='@Url.Action("Inicio", "Home")'>Volver al inicio</a>
+
