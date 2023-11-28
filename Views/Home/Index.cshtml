@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="~/css/site.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
@@ -16,6 +17,10 @@
 </body>
 
 </html>
+<body class="body">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Iniciar Sesion
+</button>
 @foreach (Jugador item in ViewBag.PrimerosJugadores)
 {
   <div class="card" style="width: 18rem;">
@@ -32,9 +37,7 @@
   <br>
 }
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -54,3 +57,4 @@
     </div>
   </div>
 </div>
+</body>

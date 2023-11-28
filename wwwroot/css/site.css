@@ -19,3 +19,13 @@ footer {
   bottom: 0; 
   margin: 10px 0px 20px 0px;
 }
+.card{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.body div{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
