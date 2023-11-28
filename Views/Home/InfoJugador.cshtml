@@ -37,7 +37,7 @@
 <a href='@Url.Action("Inicio", "Home")'>Volver al inicio</a>
 <h1>Agregar Comentario</h1>
 <form action='@Url.Action("AgregarComentario","Home")' >
-    <input type="hidden" name="IdJuagdor" value="Jugador.IdJugador" >
+    <input type="hidden" name="IdJuagdor" value="@ViewBag.Jugador.IdJugador" >
     <input type="hidden" name="IdUsuario" value="">
     <input class="controls" autocomplete="off" type="text" name="Contenido" required placeholder="Ingrese el comentario">
     <input class="botons" type="submit" value="Cargar" >

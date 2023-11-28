@@ -176,10 +176,7 @@ public static class BD {
     public static void InsertarComentario(Comentario com){
          using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "InsertarComentario";
-            db.Execute(sp, new {IdUsuario = 2,
-            IdJugador = com.IdJugador,
-            Contenido=com.Contenido,
-            Likes = 0,
+            db.Execute(sp, new {idUsuario = 3, idJugador = com.IdJugador, Contenido=com.Contenido, Likes = 0
             }, commandType: CommandType.StoredProcedure);
         }
     }
