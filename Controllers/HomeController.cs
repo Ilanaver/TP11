@@ -69,4 +69,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult AgregarComentario(Comentario com)
+    {
+    BD.InsertarComentario(com);
+    
+    return RedirectToAction ("InfoJugador",new{IdComentario=com.IdComentario});
+    }
+
 }
