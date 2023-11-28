@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - TPXX - Apellido</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 
@@ -42,10 +41,17 @@
     <div style="padding:20px 10px 0px 10px;">
         @RenderBody()
     </div>
-   
-    <footer>
-        &copy; @DateTime.Now.Year - Taller de Programación - TPXX
-    </footer>
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+    
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
