@@ -18399,6 +18399,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "z:\\programacion 2023\\TP11-1\\Views\\Home\\CambiarContraseña.cshtml",
+      "TargetPath": "Views\\Home\\CambiarContraseña.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "z:\\programacion 2023\\TP11-1\\Views\\Home\\Registro.cshtml",
       "TargetPath": "Views\\Home\\Registro.cshtml",
       "FileKind": "mvc"
@@ -18416,11 +18421,6 @@
     {
       "FilePath": "z:\\programacion 2023\\TP11-1\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "z:\\programacion 2023\\TP11-1\\Views\\Home\\CambiarContrase+¦a.cshtml",
-      "TargetPath": "Views\\Home\\CambiarContrase+¦a.cshtml",
       "FileKind": "mvc"
     },
     {

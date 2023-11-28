@@ -33,6 +33,7 @@ public class HomeController : Controller
     {
         ViewBag.Jugador=BD.GetJugadorByID(IdJugador);
         ViewBag.TitulosJugador=BD.GetTitulosByJugador(IdJugador);
+        ViewBag.ComentariosJugador=BD.GetComentarioByJugador(IdJugador);
         return View();
     }
     public IActionResult InfoEquipo(int IdEquipo)
