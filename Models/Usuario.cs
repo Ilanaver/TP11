@@ -1,6 +1,7 @@
 public class Usuario{
-    public int IdUsuario{get;set;}
-    public string Username{get;set;}
-    public string Mail{get;set;}
-    public string Contraseña{get;set;}
+    public string username{get;set;}
+    public string contraseña{get; set;}
+    public string nombre{get;set;}
+    public string email{get;set;}
+    public int telefono{get;set;}
 }

@@ -1,9 +1,29 @@
+
 <h1>@ViewBag.Jugador.Nombre</h1>
-<img src="@ViewBag.Jugador.Imagen" alt="">
-<h1>@ViewBag.Jugador.Edad</h1>
-<h1>@ViewBag.Jugador.Descripcion</h1>
-<h1>@ViewBag.Jugador.Posicion</h1>
-<h1>@ViewBag.Jugador.PartidosJugados</h1>
-<h1>@ViewBag.Jugador.Goles</h1>
-<h1>@ViewBag.Jugador.Likes</h1>
-<h1>@ViewBag.Jugador.Dislikes</h1>
+<img src="@ViewBag.Jugador.ImagenJugador" alt="">
+<img src="@ViewBag.Jugador.ImEquipo" alt="">
+<h1>Edad: @ViewBag.Jugador.Edad</h1>
+<h1>Posicion: @ViewBag.Jugador.Posicion</h1>
+
+<h1>Descripcion: @ViewBag.Jugador.Descripcion</h1>
+<h1>Partidos jugados: @ViewBag.Jugador.PartidosJugados</h1>
+<h1>Goles: @ViewBag.Jugador.Goles</h1>
+
+
+<p>  @ViewBag.Jugador.ImPais</p>
+<p>Pais: @ViewBag.Jugador.IdPais</p>
+<p>EquipoActual: @ViewBag.Jugador.IdEquipoActual</p>
+<p>@ViewBag.Jugador.ImEquipo</p>
+
+<h1>Likes: @ViewBag.Jugador.Likes</h1>
+<img src="@ViewBag.Jugador.ImEquipo" alt="">
+<h1>Dislikes: @ViewBag.Jugador.Dislikes</h1>
+
+<h2>Titulos:</h2>
+@foreach (TituloXJugador item in ViewBag.TitulosJugador)
+{
+    <p>@item.Nombre</p>
+     <img src="@item.Imagen" alt="">
+}
+
+<a href='@Url.Action("Inicio", "Home")'>Volver al inicio</a>

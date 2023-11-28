@@ -6,21 +6,62 @@ namespace TP11.Models;
 public static class BD {
     public static string _connectionString = @"Server=localhost;DataBase=FuthubBD;Trusted_Connection=True;";
     
-    public static List<Jugador> GetJugadorByID(int idjug){
-        List<Jugador> ListaJugador = null;
+   public static void CrearUsuario(Usuario us)
+    {
+        using (SqlConnection BD = new SqlConnection(_connectionString))
+        {
+            string sql = "INSERT INTO Usuario([username],[contraseña],[nombre],[email],[telefono]) VALUES(@Username,@Contraseña,@Nombre,@Email,@Telefono)";
+            BD.Execute(sql, new { Username = us.username, Contraseña = us.contraseña, Nombre = us.nombre, Email = us.email, Telefono = us.telefono });
+        }
+    }
+
+    public static void CambiarContraseña(string Username, string nuevaContraseña)
+    {
+        using (SqlConnection BD = new SqlConnection(_connectionString))
+        {
+            string sql = "UPDATE Usuario SET contraseña=@NuevaContraseña where username= @username";
+            BD.Execute(sql, new { NuevaContraseña = nuevaContraseña, username = Username });
+        }
+    }
+
+    public static Usuario mostrarDatos(int IdUsuario, string username, string nombre, string email, int telefono)
+    {
+        Usuario us = null;
+        using (SqlConnection BD = new SqlConnection(_connectionString))
+        {
+            string sql = "SELECT username, nombre, email, telefono from Usuario where idUsuario=@IDusuario";
+            us = BD.QueryFirstOrDefault<Usuario>(sql, new { IdUsuario = IdUsuario });
+        }
+        return us;
+    }
+
+    public static string GetContraseñaPorUsername(string username)
+    {
+        string contraseña;
+        using (SqlConnection BD = new SqlConnection(_connectionString))
+        {
+            string sql = "SELECT contraseña FROM Usuario WHERE username=@Username";
+            contraseña = BD.QueryFirstOrDefault<string>(sql, new { Username = username });
+        }
+        return contraseña;
+    }
+
+
+    public static Jugador GetJugadorByID(int idjug){
+        Jugador UnJugador = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "GetJugadorByID";
-            ListaJugador = db.Query<Jugador>(sp, new { IdJugador = idjug}, commandType: CommandType.StoredProcedure).ToList();
+            UnJugador = db.QueryFirstOrDefault<Jugador>(sp, new { IdJugador = idjug}, commandType: CommandType.StoredProcedure);
         }
-        return ListaJugador;
+        return UnJugador;
     }
-    public static List<Equipo> GetEquipoByID(int idteam){
-        List<Equipo> ListaEquipos = null;
+    public static Equipo GetEquipoByID(int idteam){
+        Equipo UnEquipo = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "GetEquipoByID";
-            ListaEquipos = db.Query<Equipo>(sp, new { IdEquipo = idteam}, commandType: CommandType.StoredProcedure).ToList();
+            UnEquipo = db.QueryFirstOrDefault<Equipo>(sp, new { IdEquipo = idteam}, commandType: CommandType.StoredProcedure);
         }
-        return ListaEquipos;
+        return UnEquipo;
     }
     public static List<Usuario> GetUsuarioByID(int idUser){
         List<Usuario> ListaUsuarios = null;
@@ -83,8 +124,53 @@ public static class BD {
         List<TituloXJugador> ListaTitulos = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "GetTitulosByJugador";
-            ListaTitulos = db.Query<TituloXJugador>(sp, new { IdJugador = idJugador}, commandType: CommandType.StoredProcedure).ToList();
+            ListaTitulos = db.Query<TituloXJugador>(sp, new { idJugador = idJugador}, commandType: CommandType.StoredProcedure).ToList();
         }
         return ListaTitulos;
     }
+
+    public static void InsertarJugador(Jugador jug){
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "InsertarJugador";
+            db.Execute(sp, new {IdPais = jug.IdPais,
+            IdEquipoActual = jug.IdEquipoActual,
+            Nombre = jug.Nombre,
+            Imagen = jug.ImagenJugador,
+            Edad = jug.Edad,
+            Descripcion = jug.Descripcion,
+            Posicion = jug.Posicion,
+            PartidosJugados = jug.PartidosJugados,
+            Goles = jug.Goles,
+            Likes = jug.Likes,
+            Dislikes = jug.Dislikes}, commandType: CommandType.StoredProcedure);
+        }
+    }
+
+    public static List<ResultadoBusqueda> Busqueda(string buscado){
+    List<ResultadoBusqueda> ListaResultados = null;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+        string sp = "Busqueda";
+        ListaResultados = db.Query<ResultadoBusqueda>(sp, new {terminoBuscado=buscado}, commandType: CommandType.StoredProcedure).ToList();
+    }
+    return ListaResultados;
+    }
+
+    public static List<Pais> GetPaises(){
+        List<Pais> ListaPaises = null;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "GetPaises";
+            ListaPaises = db.Query<Pais>(sp, commandType: CommandType.StoredProcedure).ToList();
+        }
+        return ListaPaises;
+    }
+
+    public static List<Equipo> GetEquipos(){
+        List<Equipo> ListaEquipos = null;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "GetEquipos";
+            ListaEquipos = db.Query<Equipo>(sp, commandType: CommandType.StoredProcedure).ToList();
+        }
+        return ListaEquipos;
+    }
+    
 }
