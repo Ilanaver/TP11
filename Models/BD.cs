@@ -88,13 +88,13 @@ public static class BD {
         }
         return ListaJugadores;
     }
-    public static Comentario GetComentarioByJugador(int idJugador){
-        Comentario UnComentario = null;
+    public static List<Comentario> GetComentarioByJugador(int idJugador){
+        List<Comentario> ListaComentarios = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "GetComentarioByJugador";
-            UnComentario = db.QueryFirstOrDefault<Comentario>(sp, new { IdJugador = idJugador}, commandType: CommandType.StoredProcedure);
+            ListaComentarios = db.Query<Comentario>(sp, new { IdJugador = idJugador}, commandType: CommandType.StoredProcedure).ToList();
         }
-        return UnComentario;
+        return ListaComentarios;
     }
     public static List<Equipo> GetEquiposByPais(int idPais){
         List<Equipo> ListaEquipos = null;
@@ -171,6 +171,17 @@ public static class BD {
             ListaEquipos = db.Query<Equipo>(sp, commandType: CommandType.StoredProcedure).ToList();
         }
         return ListaEquipos;
+    }
+
+    public static void InsertarComentario(Comentario com){
+         using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "InsertarComentario";
+            db.Execute(sp, new {IdUsuario = 2,
+            IdJugador = com.IdJugador,
+            Contenido=com.Contenido,
+            Likes = 0,
+            }, commandType: CommandType.StoredProcedure);
+        }
     }
     
 }
