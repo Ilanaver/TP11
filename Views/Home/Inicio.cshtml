@@ -22,24 +22,23 @@
 </html>
 <div class="conteiner-fluid">
   <div class="row">
-@foreach (Jugador item in ViewBag.PrimerosJugadores)
-{
-  <div class="col-md-3 col-12">
-  <div class="card" style="width: 18rem;">
-    <img src=@item.ImagenJugador>
-    <div class="card-body">
-      <h5 class="card-title">@item.Nombre</h5>
-      <p class="card-text">@item.Descripcion</p>
-      
-      <a href='@Url.Action("InfoJugador", new{IdJugador=@item.IdJugador})' class="btn btn-primary">Ver Info</a>
-    </div>
+    @foreach (Jugador item in ViewBag.PrimerosJugadores)
+    {
+      <div class="col-md-3 col-12">
+        <div class="card" style="width: 18rem;">
+          <img src=@item.ImagenJugador>
+          <div class="card-body">
+            <h5 class="card-title">@item.Nombre</h5>
+            <p class="card-text">@item.Descripcion</p>
+              
+            <a href='@Url.Action("InfoJugador", new{IdJugador=@item.IdJugador})' class="btn btn-primary">Ver Info</a>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+    }
   </div>
-  <br>
-
-  <br>
-  </div>
-}
-</div>
 </div>
 
 <!-- Button trigger modal -->

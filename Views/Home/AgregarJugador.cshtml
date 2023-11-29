@@ -1,14 +1,14 @@
 <p>Formulario de Agregar jugador</p>
 <form action='@Url.Action("GuardarJugador","Home")'>
     <select name="IdPais">
-        <option value="" disabled selected>Equipo Actual</option>
+        <option value="" disabled selected>País de origen</option>
         @foreach (Pais item in ViewBag.ListaPaises)
         {
             <option value="@item.IdPais"><p>@item.Nombre</p></option>
         }
     </select>
     <select name="IdEquipo">
-        <option value="" disabled selected>País de origen</option>
+        <option value="" disabled selected>Equipo Actual</option>
         @foreach (Equipo item in ViewBag.ListaEquipos)
         {
             <option value="@item.IdEquipo"><p>@item.Nombre</p></option>

@@ -12,7 +12,7 @@
 
 <p>  @ViewBag.Jugador.ImPais</p>
 <p>Pais: @ViewBag.Jugador.IdPais</p>
-<p>EquipoActual: @ViewBag.Jugador.IdEquipoActual</p>
+<p>EquipoActual: @ViewBag.Jugador.IdEquipo</p>
 <p>@ViewBag.Jugador.ImEquipo</p>
 
 <h1>Likes: @ViewBag.Jugador.Likes</h1>
@@ -30,8 +30,6 @@
 @foreach (Comentario item in ViewBag.ComentariosJugador)
 {
     <p>@item.Contenido</p>
-    <p>@item.Likes</p>
-
 }
 
 <a href='@Url.Action("Inicio", "Home")'>Volver al inicio</a>
