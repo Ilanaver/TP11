@@ -10,7 +10,7 @@ public static class BD {
     {
         using (SqlConnection BD = new SqlConnection(_connectionString))
         {
-            string sql = "INSERT INTO Usuario([username],[contraseña],[mail]) VALUES(@Username,@Contraseña,@mail)";
+            string sql = "INSERT INTO Usuario([username],[contraseña],[email]) VALUES(@Username,@Contraseña,@mail)";
             BD.Execute(sql, new { username = us.username, contraseña = us.contraseña, mail = us.mail});
         }
     }
@@ -37,7 +37,7 @@ public static class BD {
 
     public static string GetContraseñaPorUsername(string username)
     {
-        string contraseña;
+        string contraseña = null;
         using (SqlConnection BD = new SqlConnection(_connectionString))
         {
             string sql = "SELECT contraseña FROM Usuario WHERE username=@Username";
@@ -133,7 +133,7 @@ public static class BD {
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "InsertarJugador";
             db.Execute(sp, new {IdPais = jug.IdPais,
-            IdEquipoActual = jug.IdEquipoActual,
+            IdEquipo = jug.IdEquipo,
             Nombre = jug.Nombre,
             Imagen = jug.ImagenJugador,
             Edad = jug.Edad,
