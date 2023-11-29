@@ -12,7 +12,7 @@ public static class BD {
         {
             string sql = "INSERT INTO Usuario([username],[contraseña],[mail]) VALUES(@Username,@Contraseña,@mail)";
             BD.Execute(sql, new { username = us.username, contraseña = us.contraseña, mail = us.mail});
-        }
+        }.
     }
 
     public static void CambiarContraseña(string Username, string nuevaContraseña)
