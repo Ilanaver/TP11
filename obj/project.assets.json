@@ -505,19 +505,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Santi Palma\\.nuget\\packages\\": {}
+    "C:\\Users\\47490026\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\prog4\\TP11\\TP11.csproj",
+      "projectUniqueName": "Z:\\ort2023\\prog\\TP11\\TP11.csproj",
       "projectName": "TP11",
-      "projectPath": "D:\\prog4\\TP11\\TP11.csproj",
-      "packagesPath": "C:\\Users\\Santi Palma\\.nuget\\packages\\",
-      "outputPath": "D:\\prog4\\TP11\\obj\\",
+      "projectPath": "Z:\\ort2023\\prog\\TP11\\TP11.csproj",
+      "packagesPath": "C:\\Users\\47490026\\.nuget\\packages\\",
+      "outputPath": "Z:\\ort2023\\prog\\TP11\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Santi Palma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\47490026\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -563,24 +568,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.16, 6.0.16]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.16, 6.0.16]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.16, 6.0.16]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.16, 6.0.16]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -589,16 +576,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché D:\\prog4\\TP11\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
