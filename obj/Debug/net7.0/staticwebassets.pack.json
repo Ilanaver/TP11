@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\prog4\\TP11\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TP11.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\prog4\\TP11\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\prog4\\TP11\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\prog4\\TP11\\wwwroot\\imagenPrincipal.png",
+      "PackagePath": "staticwebassets\\imagenPrincipal.png"
+    },
+    {
+      "Id": "D:\\prog4\\TP11\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.TP11.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.TP11.props",
+      "PackagePath": "build\\TP11.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.TP11.props",
+      "PackagePath": "buildMultiTargeting\\TP11.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.TP11.props",
+      "PackagePath": "buildTransitive\\TP11.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
