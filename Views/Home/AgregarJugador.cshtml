@@ -1,32 +1,36 @@
-@foreach (Pais item in ViewBag.ListaPaises)
-{
-    <h1>@item.IdPais</h1>
-    <p>@item.Nombre</p>
-     <img src="@item.Imagen" alt="">
-}
-
-@foreach (Equipo item in ViewBag.ListaEquipos)
-{
-    <h1>@item.IdEquipo</h1>
-    <p>@item.Nombre</p>
-     <img src="@item.Imagen" alt="">
-}
-
 <p>Formulario de Agregar jugador</p>
-<form action='@Url.Action("GuardarJugador","Home")' >
-    <input class="controls" autocomplete="off" type="number" name="IdPais" required placeholder="Ingrese el numero del pais">
-    <input class="controls" autocomplete="off" type="number" name="IdEquipoActual" required placeholder="Ingrese el numero del equipo donde juega">
+<form action='@Url.Action("GuardarJugador","Home")'>
+    <select name="IdPais">
+        <option value="" disabled selected>País de origen</option>
+        @foreach (Pais item in ViewBag.ListaPaises)
+        {
+            <option value="@item.IdPais"><p>@item.Nombre</p></option>
+        }
+    </select>
+    <select name="IdEquipo">
+        <option value="" disabled selected>Equipo Actual</option>
+        @foreach (Equipo item in ViewBag.ListaEquipos)
+        {
+            <option value="@item.IdEquipo"><p>@item.Nombre</p></option>
+        }
+    </select>
     <input class="controls" autocomplete="off" type="text" name="Nombre" required placeholder="Ingrese el nombre">
-    <input class="controls" autocomplete="off" type="text" name="ImagenJugador" required placeholder="Ingrese el link de la imagen del jugador">
+    <input class="controls" autocomplete="off" type="text" name="ImagenJugador" required
+        placeholder="Ingrese el link de la imagen del jugador">
     <input class="controls" autocomplete="off" type="number" name="Edad" required placeholder="Ingrese la edad">
-    <input class="controls" autocomplete="off" type="text" name="Descripcion" required placeholder="Ingrese la descripcion del jugador">
-    <input class="controls" autocomplete="off" type="text" name="Posicion" required placeholder="Ingrese la posicion del jugador">
-    <input class="controls" autocomplete="off" type="number" name="PartidosJugador" required placeholder="Ingrese los partidos jugados del jugador">
-    <input class="controls" autocomplete="off" type="number" name="Goles" required placeholder="Ingrese los goles del jugador">
-    <input class="controls" autocomplete="off" type="number" name="Likes" required placeholder="Ingrese los Likes del jugador">
-    <input class="controls" autocomplete="off" type="number" name="Dislikes" required placeholder="Ingrese los dislikes del jugador">
-    <input class="botons" type="submit" value="Cargar" >
+    <input class="controls" autocomplete="off" type="text" name="Descripcion" required
+        placeholder="Ingrese la descripcion del jugador">
+    <input class="controls" autocomplete="off" type="text" name="Posicion" required
+        placeholder="Ingrese la posicion del jugador">
+    <input class="controls" autocomplete="off" type="number" name="PartidosJugador" required
+        placeholder="Ingrese los partidos jugados del jugador">
+    <input class="controls" autocomplete="off" type="number" name="Goles" required
+        placeholder="Ingrese los goles del jugador">
+    <input class="controls" autocomplete="off" type="number" name="Likes" required
+        placeholder="Ingrese los Likes del jugador">
+    <input class="controls" autocomplete="off" type="number" name="Dislikes" required
+        placeholder="Ingrese los dislikes del jugador">
+    <input class="botons" type="submit" value="Cargar">
 
     <p id="errorIngreso"></p>
 </form>
-
