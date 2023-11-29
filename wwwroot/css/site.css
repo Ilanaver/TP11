@@ -10,16 +10,6 @@ html {
   }
 }
 
-body {
-  margin: 20px 60px 0px 20px;
-}
-
-footer {
-  position: fixed; 
-  bottom: 0; 
-  margin: 10px 0px 20px 0px;
-}
-
 *{
   margin: 0;
   padding: 0;
@@ -77,3 +67,67 @@ footer {
   margin-top: 3%;
 }
 
+table img, ul img{
+  height: 52px;
+  border-radius: 50%;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.banner{
+  width: 95%;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.imagen-banner{
+  height: 100px;
+}
+.pais-banner{
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid rgb(65, 65, 65);
+}
+.descripcion{
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+}
+
+.titulos{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #24ca3d;
+  color: #ecf0f1;
+}
+
+tr:nth-child(even) {
+  background-color: #e4e4e4;
+}
