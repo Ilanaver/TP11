@@ -6,7 +6,7 @@ public class HomeController : Controller
 {
         public IActionResult Index()
     {
-        return View();
+        return RedirectToAction ("Inicio", "Home");
     }
     
     public IActionResult Registro()
@@ -19,13 +19,10 @@ public class HomeController : Controller
     }
     public IActionResult Inicio()
     {
-        if(BD.user != null)
-        {
-            ViewBag.PrimerosJugadores=BD.GetTENPlayers();
+        
+        ViewBag.PrimerosJugadores=BD.GetTENPlayers();
         return View(Inicio);
-        }else{
-            return View("Index");
-        }
+        
         
     }
     
@@ -36,17 +33,23 @@ public class HomeController : Controller
         ViewBag.ListaResultados=BD.Busqueda(terminoBuscado);
         return View("Busqueda");
         }else{
-            return View("Index");
+        return RedirectToAction ("Index", "Home");
         }
         
     }
     
     public IActionResult InfoJugador(int IdJugador)
     {
-        ViewBag.Jugador=BD.GetJugadorByID(IdJugador);
+        if(BD.user != null)
+        {
+            ViewBag.Jugador=BD.GetJugadorByID(IdJugador);
         ViewBag.TitulosJugador=BD.GetTitulosByJugador(IdJugador);
         ViewBag.ComentariosJugador=BD.GetComentarioByJugador(IdJugador);
-        return View();
+        return View("InfoJugador");
+        }else{
+        return RedirectToAction ("Index", "Home");
+        }
+
     }
     public IActionResult InfoEquipo(int IdEquipo)
     {
@@ -55,6 +58,7 @@ public class HomeController : Controller
         ViewBag.ListaJugadores=BD.GetJugadoresByEquipo(IdEquipo);
         return View();
     }
+
     public IActionResult Perfil(string username)
     {
         ViewBag.Perfil=BD.GetUsuarioByUsername(username);
@@ -64,10 +68,18 @@ public class HomeController : Controller
 
     public IActionResult AgregarJugador()
     {
-        ViewBag.ListaPaises=BD.GetPaises();
+
+        if(BD.user != null)
+        {
+            ViewBag.ListaPaises=BD.GetPaises();
         ViewBag.ListaEquipos=BD.GetEquipos();
-        return View();
+        return View("AgregarJugador");
+        }else{
+        return RedirectToAction ("Index", "Home");
+        }
+
     }
+
     public IActionResult GuardarJugador(Jugador jug)
     {
         BD.InsertarJugador(jug);
@@ -89,8 +101,16 @@ public class HomeController : Controller
 
      public IActionResult DarLike(int IdJugador)
     {
+        if(BD.user != null)
+        {
         BD.ModificarLikes(IdJugador);
         return RedirectToAction ("InfoJugador",new{IdJugador=IdJugador});
+        }else{
+        return RedirectToAction ("Index", "Home");
+        }
+
+
+        
     }
     
 }
