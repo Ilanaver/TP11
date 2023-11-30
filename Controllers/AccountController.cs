@@ -16,6 +16,7 @@ public class Account : Controller
         string contra;
         contra=BD.GetContraseñaPorUsername(username);
         if(contra==contraseña){
+            BD.user=BD.GetUsuarioByUsername(username);
             return RedirectToAction("Inicio","Home");
         }else
         {
