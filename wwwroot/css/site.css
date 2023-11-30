@@ -29,7 +29,7 @@ footer {
 .ContainRegistro{
   display: flex;
   justify-content: center;
-  margin-top: 7%;
+  margin-top: 8%;
 }
 .ContainRegistro p
 {
@@ -166,12 +166,6 @@ tr:nth-child(even) {
   text-decoration: none;
   color: white;
 }
-
-.comentario{
-  padding: 10px;
-  border-top: 2px solid #e4e4e4;
-  border-bottom: 2px solid #e4e4e4;
-}
 .usuario
 {
   gap: 20px;
@@ -180,9 +174,11 @@ tr:nth-child(even) {
 }
 .BodyRegistro {
   margin: 0;
-
   align-items: center;
   justify-content: center;
-  height: 100vh;
   background: linear-gradient(to bottom right, rgb(163, 163, 163), green);
+}
+.JugPop{
+  color: black;
+  text-align: center;
 }

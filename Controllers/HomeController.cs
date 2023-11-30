@@ -73,11 +73,7 @@ public class HomeController : Controller
 
     public IActionResult AgregarJugador()
     {
-<<<<<<< HEAD
-            if(BD.user != null){
-=======
         if(BD.user != null){
->>>>>>> 99e6e9b8356996e4c4162680d7bab024a8a4521d
             ViewBag.ListaPaises=BD.GetPaises();
             ViewBag.ListaEquipos=BD.GetEquipos();
         return View("AgregarJugador");
