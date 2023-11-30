@@ -3,15 +3,15 @@
      
 
 <form  action='@Url.Action("GuardarJugador","Home")' class="Registro">
-    <p>Formulario de Agregar jugador</p>
-    <select name="IdPais">
+    <p>Agregar jugador</p>
+    <select name="IdPais" style="margin-bottom: 10px;">
         <option value="" disabled selected>País de origen</option>
         @foreach (Pais item in ViewBag.ListaPaises)
         {
             <option value="@item.IdPais"><p>@item.Nombre</p></option>
         }
     </select>
-    <select name="IdEquipo">
+    <select name="IdEquipo" style="margin-bottom: 10px;">
         <option value="" disabled selected>Equipo Actual</option>
         @foreach (Equipo item in ViewBag.ListaEquipos)
         {
@@ -30,7 +30,7 @@
         placeholder="Ingrese los partidos jugados del jugador">
     <input class="controls" autocomplete="off" type="number" name="Goles" required
         placeholder="Ingrese los goles del jugador">
-    <button type="submit" value="Cargar" class="btn btn-success">Subir comentario</button>
+    <button type="submit" value="Cargar" class="btn btn-success">Guardar jugador</button>
 
  
 </form>

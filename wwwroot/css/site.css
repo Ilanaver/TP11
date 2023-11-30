@@ -178,3 +178,37 @@ tr:nth-child(even) {
   align-items: center;
   
 }
+
+.image-button {
+  background: url("https://www.nicepng.com/png/full/778-7786050_download-instagram-like-icon-png.png") no-repeat center center; /* Ruta de tu imagen */
+  background-size:contain; /* Ajusta la imagen al tamaño del botón */
+  width: 50px; /* Ancho del botón */
+  height: 50px; /* Altura del botón */
+  border: none; /* Elimina el borde predeterminado del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  outline: none; /* Elimina el contorno al hacer clic */
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* Estilo para los options */
+option {
+  padding: 5px;
+}
+
+/* Estilo específico para los selects con nombre "IdPais" y "IdEquipo" */
+select[name="IdPais"],
+select[name="IdEquipo"] {
+  /* Ajusta los estilos según tus preferencias */
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 14px;
+}

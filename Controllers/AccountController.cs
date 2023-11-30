@@ -7,6 +7,8 @@ public class Account : Controller
     public IActionResult Registro(Usuario us)
     {
         BD.CrearUsuario(us);
+        BD.user=BD.GetUsuarioByUsername(us.username);
+
         return RedirectToAction("Inicio","Home");
     }
 
