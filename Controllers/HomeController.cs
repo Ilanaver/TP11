@@ -25,6 +25,7 @@ public class HomeController : Controller
     
     public IActionResult Busqueda(string terminoBuscado)
     {
+        ViewBag.terminoBuscado=terminoBuscado;
         ViewBag.ListaResultados=BD.Busqueda(terminoBuscado);
         return View();
     }

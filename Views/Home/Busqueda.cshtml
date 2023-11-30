@@ -1,21 +1,26 @@
-<ul class="listaBusqueda">
-    @foreach (ResultadoBusqueda item in ViewBag.ListaResultados)
-    {
-        <li>
-            <a href='@{
+<h2 style="text-align: center;">Resultados para "@ViewBag.terminoBuscado"</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Imagen</th>
+            <th>Nación</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (ResultadoBusqueda item in ViewBag.ListaResultados)
+        {
+            <tr>
+                <td><a href='@{
                 if(item.Tipo == "A")
-                    @Url.Action("InfoJugador", "Home", new { IdJugador = item.IdRegistro })
+                @Url.Action("InfoJugador", "Home", new { IdJugador = item.IdRegistro })
                 else
-                    @Url.Action("InfoEquipo", "Home", new { IdEquipo = item.IdRegistro })
-            }'>
-                <div class="filaBusqueda">
-                    <p>@item.Nombre</p>
-                    <img src="@item.Imagen" alt="">
-                    <img src="@item.ImagenPais" alt="">
-                </div>
-            </a>
-        </li>
-    }
-</ul>
-
-
+                @Url.Action("InfoEquipo", "Home", new { IdEquipo = item.IdRegistro })
+            }'>@item.Nombre</a></td>
+                <td><img src="@item.Imagen" alt=""></td>
+                <td><img src="@item.ImagenPais" alt=""></td>
+                
+            </tr>
+        }
+    </tbody>
+</table>

@@ -11,9 +11,9 @@
     <div class="titulos">
       @foreach (TituloXEquipo item in ViewBag.TitulosEquipo)
       {
-        <div class="card" style="width: 9rem;">
-          <img class="card-img-top" src="@item.Imagen" alt="Card image cap" height="90px">
-          <div class="card-body">
+        <div class="card" style="margin-bottom: 10px; width: 9rem;">
+          <img class="card-img-top" src="@item.Imagen" alt="Card image cap"  >
+          <div class="card-body" style="text-align: center;">
             <p><b>@item.Nombre</b></p>
             <p>Año: @item.Año</p>
           </div>
@@ -27,7 +27,7 @@
       <tr>
         <th>Nombre</th>
         <th>Imagen Jugador</th>
-        <th>Imagen País</th>
+        <th>Nación</th>
         <th>Posición</th>
       </tr>
     </thead>

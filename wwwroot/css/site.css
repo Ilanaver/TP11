@@ -14,6 +14,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 .ContainRegistro{
   display: flex;
@@ -109,6 +110,11 @@ main{
   flex-wrap: wrap;
 }
 
+.card-img-top{
+  height: 200px;
+  object-fit: cover;
+}
+
 table {
   width: 80%;
   margin: 20px auto;
@@ -131,3 +137,4 @@ th {
 tr:nth-child(even) {
   background-color: #e4e4e4;
 }
+
