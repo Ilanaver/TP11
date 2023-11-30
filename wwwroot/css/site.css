@@ -166,17 +166,15 @@ tr:nth-child(even) {
   text-decoration: none;
   color: white;
 }
-<<<<<<< HEAD
 
 .comentario{
   padding: 10px;
   border-top: 2px solid #e4e4e4;
   border-bottom: 2px solid #e4e4e4;
-=======
+}
 .usuario
 {
   gap: 20px;
   align-items: center;
   
->>>>>>> e7e4827b59756f9c29f3dcd4d223477055c98518
 }
