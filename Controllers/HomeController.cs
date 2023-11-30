@@ -22,7 +22,7 @@ public class HomeController : Controller
         if(BD.user != null)
         {
             ViewBag.PrimerosJugadores=BD.GetTENPlayers();
-        return View(Inicio);
+            return View("Inicio");
         }else{
             return View("Index");
         }
@@ -64,9 +64,15 @@ public class HomeController : Controller
 
     public IActionResult AgregarJugador()
     {
-        ViewBag.ListaPaises=BD.GetPaises();
-        ViewBag.ListaEquipos=BD.GetEquipos();
+        
         return View();
+        if(BD.user != null){
+            ViewBag.ListaPaises=BD.GetPaises();
+            ViewBag.ListaEquipos=BD.GetEquipos();
+        return View();
+        }else{
+            return View("Index");
+        }
     }
     public IActionResult GuardarJugador(Jugador jug)
     {

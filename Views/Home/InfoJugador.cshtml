@@ -2,10 +2,13 @@
     <div class="banner">
         <img class="imagen-banner" src="@ViewBag.Jugador.ImagenJugador" alt="">
         <h2>@ViewBag.Jugador.Nombre</h2>
-        <a href='@Url.Action("InfoEquipo", "Home", new{IdEquipo=ViewBag.Jugador.IdEquipo})'><img src="@ViewBag.Jugador.ImEquipo"></a>
-        <img class="pais-banner" src="@ViewBag.Jugador.ImPais" alt="">
+        <div class="imagenes-banner">
+            <a href='@Url.Action("InfoEquipo", "Home", new{IdEquipo=ViewBag.Jugador.IdEquipo})'><img src="@ViewBag.Jugador.ImEquipo"></a>
+            <img class="pais" src="@ViewBag.Jugador.ImPais" alt="">
+        </div>
+        
     </div>
-
+    
     <table>
         <thead>
             <tr>
@@ -32,7 +35,7 @@
         <div class="titulos">
             @foreach (TituloXJugador item in ViewBag.TitulosJugador)
             {
-                <div class="card" style="margin-bottom: 10px; width: 9rem;">
+                <div class="card" style="margin-bottom: 20px; width: 9rem;">
                     <img class="card-img-top" src="@item.Imagen" alt="Card image cap">
                     <div class="card-body" style="text-align: center;">
                         <p><b>@item.Nombre</b></p>
@@ -44,14 +47,14 @@
     }
 </main>
 
-<h1>Comentarios:</h1>
+<h2>@ViewBag.ComentariosJugador.Count comentarios</h2>
 @foreach (Comentario item in ViewBag.ComentariosJugador)
 {
+    
     <p>@item.Contenido</p>
 }
 
-<a href='@Url.Action("Inicio", "Home")'>Volver al inicio</a>
-<h1>Agregar Comentario</h1>
+
 <form action='@Url.Action("AgregarComentario","Home")'>
     <input type="hidden" name="IdJugador" value="@ViewBag.Jugador.IdJugador">
     <input type="hidden" name="IdUsuario" value="">
