@@ -63,16 +63,13 @@ public class HomeController : Controller
         ViewBag.ListaJugadores=BD.GetJugadoresByEquipo(IdEquipo);
         return View();
     }
-<<<<<<< HEAD
-=======
+
 
     public IActionResult Perfil(string username)
     {
         ViewBag.Perfil=BD.GetUsuarioByUsername(username);
         return View();
     }
-    
->>>>>>> 36023bc81276ebec11fde06112798987cad79457
 
     public IActionResult AgregarJugador()
     {

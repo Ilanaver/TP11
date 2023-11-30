@@ -29,7 +29,7 @@ footer {
 .ContainRegistro{
   display: flex;
   justify-content: center;
-  margin-top: 8%;
+  margin-top: 7%;
 }
 .ContainRegistro p
 {
@@ -171,4 +171,12 @@ tr:nth-child(even) {
   gap: 20px;
   align-items: center;
   
+}
+.BodyRegistro {
+  margin: 0;
+
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, rgb(163, 163, 163), green);
 }
