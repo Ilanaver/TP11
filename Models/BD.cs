@@ -4,7 +4,10 @@ using System.Data;
 namespace TP11.Models;
 
 public static class BD {
-    public static string _connectionString = @"Server=DESKTOP-0JV76DN\SQLEXPRESS;DataBase=FuthubBD;Trusted_Connection=True;";
+    public static Usuario user=null;
+
+
+    public static string _connectionString = @"Server=localhost;DataBase=FuthubBD;Trusted_Connection=True;";
     
    public static void CrearUsuario(Usuario us)
     {
@@ -63,13 +66,13 @@ public static class BD {
         }
         return UnEquipo;
     }
-    public static List<Usuario> GetUsuarioByID(int idUser){
-        List<Usuario> ListaUsuarios = null;
+    public static Usuario GetUsuarioByUsername(string username){
+        Usuario us = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sp = "GetUsuarioByID";
-            ListaUsuarios = db.Query<Usuario>(sp, new { IdUsuario = idUser}, commandType: CommandType.StoredProcedure).ToList();
+            string sp = "GetUsuarioByUsername";
+            us = db.QueryFirstOrDefault<Usuario>(sp, new { Username = username}, commandType: CommandType.StoredProcedure);
         }
-        return ListaUsuarios;
+        return us;
     }
     
     public static List<Jugador> GetJugadoresByEquipo(int idteam){

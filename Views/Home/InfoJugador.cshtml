@@ -2,7 +2,7 @@
     <div class="banner">
         <img class="imagen-banner" src="@ViewBag.Jugador.ImagenJugador" alt="">
         <h2>@ViewBag.Jugador.Nombre</h2>
-        <img src="@ViewBag.Jugador.ImEquipo">
+        <a href='@Url.Action("InfoEquipo", "Home", new{IdEquipo=ViewBag.Jugador.IdEquipo})'><img src="@ViewBag.Jugador.ImEquipo"></a>
         <img class="pais-banner" src="@ViewBag.Jugador.ImPais" alt="">
     </div>
 
