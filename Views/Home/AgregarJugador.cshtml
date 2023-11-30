@@ -1,7 +1,9 @@
-<p>Formulario de Agregar jugador</p>
+
 <div class="ContainRegistro">
      
-<form action='@Url.Action("GuardarJugador","Home")'>
+
+<form  action='@Url.Action("GuardarJugador","Home")' class="Registro">
+    <p>Formulario de Agregar jugador</p>
     <select name="IdPais">
         <option value="" disabled selected>País de origen</option>
         @foreach (Pais item in ViewBag.ListaPaises)

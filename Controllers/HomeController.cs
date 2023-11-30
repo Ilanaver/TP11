@@ -17,6 +17,11 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Perfil(int IdUsuario)
+    {
+        ViewBag.Datos=BD.mostrarDatos(IdUsuario);
+        return View();
+    }
     public IActionResult Inicio()
     {
         if(BD.user != null)
@@ -55,12 +60,6 @@ public class HomeController : Controller
         ViewBag.ListaJugadores=BD.GetJugadoresByEquipo(IdEquipo);
         return View();
     }
-    public IActionResult Perfil(string username)
-    {
-        ViewBag.Perfil=BD.GetUsuarioByUsername(username);
-        return View();
-    }
-    
 
     public IActionResult AgregarJugador()
     {
