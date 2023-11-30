@@ -34,17 +34,20 @@ function ActualizarLikes(IdJugador)
         {
             type:'POST',
             dataType:'JSON',
-            url:'/Home/VerDetalleSerie',
-            data:{IdSerie: IdSerie},
+            url:'/Home/DarLike',
+            data:{IdJugador: IdJugador},
             success:
             function(response){
-                $("#NombreSerie").html(response.nombre);
-                $("#FotoSerie").attr("src",response.imagenSerie);
-                $("#AñoInicio").html(response.añoInicio);
-                $("#Sinopsis").html(response.sinopsis);
-                vaciarHTMLActores();
-                vaciarHTMLTemporadas();
+                
             }
         }
     )
 }
+
+
+$("#NombreSerie").html(response.nombre);
+$("#FotoSerie").attr("src",response.imagenSerie);
+$("#AñoInicio").html(response.añoInicio);
+$("#Sinopsis").html(response.sinopsis);
+vaciarHTMLActores();
+vaciarHTMLTemporadas();
