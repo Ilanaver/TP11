@@ -27,12 +27,12 @@ public static class BD {
         }
     }
 
-    public static Usuario mostrarDatos(int IdUsuario, string username, string nombre, string email, int telefono)
+    public static Usuario mostrarDatos(int IdUsuario)
     {
         Usuario us = null;
         using (SqlConnection BD = new SqlConnection(_connectionString))
         {
-            string sql = "SELECT username, nombre, email, telefono from Usuario where idUsuario=@IDusuario";
+            string sql = "SELECT username, nombre, email from Usuario where idUsuario=@IDusuario";
             us = BD.QueryFirstOrDefault<Usuario>(sql, new { IdUsuario = IdUsuario });
         }
         return us;
@@ -144,8 +144,8 @@ public static class BD {
             Posicion = jug.Posicion,
             PartidosJugados = jug.PartidosJugados,
             Goles = jug.Goles,
-            Likes = jug.Likes,
-            Dislikes = jug.Dislikes}, commandType: CommandType.StoredProcedure);
+            Likes = 0,
+            Dislikes = 0}, commandType: CommandType.StoredProcedure);
              
         }
     }

@@ -29,4 +29,9 @@ public class Account : Controller
         BD.CambiarContraseña(username,nuevaContraseña);
         return RedirectToAction("Inicio","Home");
     }
+     public IActionResult MostrarPerfil(string username )
+    {
+        BD.GetUsuarioByUsername(username);
+        return View();
+    }
 }
