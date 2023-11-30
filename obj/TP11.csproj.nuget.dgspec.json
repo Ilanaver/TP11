@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\prog4\\TP11\\TP11.csproj": {}
+    "D:\\prog4\\TP11 - copia\\TP11.csproj": {}
   },
   "projects": {
-    "D:\\prog4\\TP11\\TP11.csproj": {
+    "D:\\prog4\\TP11 - copia\\TP11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\prog4\\TP11\\TP11.csproj",
+        "projectUniqueName": "D:\\prog4\\TP11 - copia\\TP11.csproj",
         "projectName": "TP11",
-        "projectPath": "D:\\prog4\\TP11\\TP11.csproj",
+        "projectPath": "D:\\prog4\\TP11 - copia\\TP11.csproj",
         "packagesPath": "C:\\Users\\Santi Palma\\.nuget\\packages\\",
-        "outputPath": "D:\\prog4\\TP11\\obj\\",
+        "outputPath": "D:\\prog4\\TP11 - copia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Santi Palma\\AppData\\Roaming\\NuGet\\NuGet.Config",
