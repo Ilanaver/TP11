@@ -1,58 +1,49 @@
-<p>@ViewBag.Equipo.Nombre</p>
-<img src="@ViewBag.Equipo.Imagen" alt="">
-<p>@ViewBag.Equipo.Descripcion</p>
-<img src="@ViewBag.Equipo.imgPais" alt="">
+<main>
+  <div class="banner">
+    <img class="imagen-banner" src="@ViewBag.Equipo.Imagen" alt="">
+    <h2>@ViewBag.Equipo.Nombre</h2>
+    <img class="pais-banner" src="@ViewBag.Equipo.ImPais" alt="">
+  </div>
+  <p class="descripcion">@ViewBag.Equipo.Descripcion</p>
 
-<table class="items">
-  <thead>
-    <tr>
-      <th id="yw0_c0">Nombre / Posición</th>
-      <th class="zentriert" id="yw0_c1">Puesto</th>
-      <th class="zentriert" id="yw0_c2">Club</th>
-      <th class="zentriert" id="yw0_c3">
-        <a class="sort-link" href="/schnellsuche/ergebnis/schnellsuche?query=raci&amp;sort=age">Edad</a>
-      </th>
-      <th class="zentriert" id="yw0_c4">Nac.</th>
-      <th class="rechts" id="yw0_c5">
-        <a class="sort-link" href="/schnellsuche/ergebnis/schnellsuche?query=raci&amp;sort=marktwert.desc">Valor de mercado</a>
-      </th>
-      <th class="rechts" id="yw0_c6">Agentes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td>
-        <table class="inline-table">
-          <tbody>
-            <tr>
-              <td rowspan="2">
-                <a href="#">
-                  <img src="https://img.a.transfermarkt.technology/portrait/small/7983-1446727528.jpg?lm=1" title="Cani" alt="Cani" class="bilderrahmen-fixed">
-                </a>
-              </td>
-              <td class="hauptlink">
-                <a title="Cani" href="/cani/profil/spieler/7983">Cani</a>
-              </td>
-            </tr>
-            <tr>
-              <td>Retirado</td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-      <td class="zentriert">MCO</td>
-      <td class="zentriert">
-        <img src="https://tmssl.akamaized.net/images/wappen/tiny/123.png?lm=1456997286" title="Retirado" alt="Retirado" class="tiny_wappen">
-      </td>
-      <td class="zentriert">42</td>
-      <td class="zentriert">
-        <img src="https://tmssl.akamaized.net/images/flagge/verysmall/157.png?lm=1520611569" title="España" alt="España" class="flaggenrahmen">
-      </td>
-      <td class="rechts hauptlink">-</td>
-      <td class="rechts">
-        <img style="margin-right: 3px; position: relative; top: 2px" src="https://tmsi.akamaized.net/berater/verified_premium_minified.png" alt="Verificado" title="Verificado" height="13" width="13">
-        <a href="/bahia-internacional/beraterfirma/berater/1033">Bahía Internacional</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+  @if (ViewBag.TitulosEquipo != null)
+  {
+    <div class="titulos">
+      @foreach (TituloXEquipo item in ViewBag.TitulosEquipo)
+      {
+        <div class="card" style="margin-bottom: 10px; width: 9rem;">
+          <img class="card-img-top" src="@item.Imagen" alt="Card image cap"  >
+          <div class="card-body" style="text-align: center;">
+            <p><b>@item.Nombre</b></p>
+            <p>Año: @item.Año</p>
+          </div>
+        </div>
+      }
+    </div>
+  }
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Imagen Jugador</th>
+        <th>Nación</th>
+        <th>Posición</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach (Jugador item in ViewBag.ListaJugadores)
+      {
+
+        <tr>
+          <td><a href='@Url.Action("InfoJugador","Home", new{ IdJugador = item.IdJugador })'>@item.Nombre</a></td>
+          <td><img src="@item.ImagenJugador" alt="Imagen Jugador"></td>
+          <td><img src="@item.ImPais" alt="Imagen País"></td>
+          <td>@item.Posicion</td>
+        </tr>
+
+
+      }
+    </tbody>
+  </table>
+</main>

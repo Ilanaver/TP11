@@ -1,41 +1,23 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "Z:\\ort2023\\prog\\TP11\\TP11.csproj": {}
+    "Z:\\programacion 2023\\TP11-1\\tp11.csproj": {}
   },
   "projects": {
-    "Z:\\ort2023\\prog\\TP11\\TP11.csproj": {
+    "Z:\\programacion 2023\\TP11-1\\tp11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\ort2023\\prog\\TP11\\TP11.csproj",
-        "projectName": "TP11",
-        "projectPath": "Z:\\ort2023\\prog\\TP11\\TP11.csproj",
-        "packagesPath": "C:\\Users\\47490026\\.nuget\\packages\\",
-        "outputPath": "Z:\\ort2023\\prog\\TP11\\obj\\",
-=======
-    "Z:\\prog\\TP11\\TP11.csproj": {}
-  },
-  "projects": {
-    "Z:\\prog\\TP11\\TP11.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "Z:\\prog\\TP11\\TP11.csproj",
-        "projectName": "TP11",
-        "projectPath": "Z:\\prog\\TP11\\TP11.csproj",
-        "packagesPath": "C:\\Users\\47756465\\.nuget\\packages\\",
-        "outputPath": "Z:\\prog\\TP11\\obj\\",
->>>>>>> 6bcbcf2074758a5aaf8bad8e26532d117b32a6fe
+        "projectUniqueName": "Z:\\programacion 2023\\TP11-1\\tp11.csproj",
+        "projectName": "tp11",
+        "projectPath": "Z:\\programacion 2023\\TP11-1\\tp11.csproj",
+        "packagesPath": "C:\\Users\\47958668\\.nuget\\packages\\",
+        "outputPath": "Z:\\programacion 2023\\TP11-1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\47490026\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\47756465\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 6bcbcf2074758a5aaf8bad8e26532d117b32a6fe
+          "C:\\Users\\47958668\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -1,39 +1,39 @@
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\appsettings.Development.json
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\appsettings.json
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\TP11.staticwebassets.runtime.json
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\TP11.exe
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\TP11.deps.json
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\TP11.runtimeconfig.json
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\TP11.dll
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\TP11.pdb
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\Dapper.dll
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\System.Data.SqlClient.dll
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-Z:\ort2023\prog\TP11\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.csproj.AssemblyReference.cache
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.GeneratedMSBuildEditorConfig.editorconfig
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.AssemblyInfoInputs.cache
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.AssemblyInfo.cs
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.csproj.CoreCompileInputs.cache
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.MvcApplicationPartsAssemblyInfo.cache
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.RazorAssemblyInfo.cache
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.RazorAssemblyInfo.cs
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\staticwebassets\msbuild.TP11.Microsoft.AspNetCore.StaticWebAssets.props
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\staticwebassets\msbuild.build.TP11.props
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TP11.props
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TP11.props
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\staticwebassets.pack.json
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\staticwebassets.build.json
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\staticwebassets.development.json
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\scopedcss\bundle\TP11.styles.css
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\scopedcss\projectbundle\TP11.bundle.scp.css
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.csproj.CopyComplete
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.dll
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\refint\TP11.dll
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.pdb
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\TP11.genruntimeconfig.cache
-Z:\ort2023\prog\TP11\obj\Debug\net6.0\ref\TP11.dll
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\appsettings.Development.json
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\appsettings.json
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\tp11.staticwebassets.runtime.json
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\tp11.exe
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\tp11.deps.json
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\tp11.runtimeconfig.json
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\tp11.dll
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\tp11.pdb
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\Dapper.dll
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\System.Data.SqlClient.dll
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+Z:\programacion 2023\TP11-1\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\tp11.csproj.AssemblyReference.cache
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\tp11.GeneratedMSBuildEditorConfig.editorconfig
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\tp11.AssemblyInfoInputs.cache
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\tp11.AssemblyInfo.cs
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\tp11.csproj.CoreCompileInputs.cache
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\tp11.MvcApplicationPartsAssemblyInfo.cache
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\tp11.RazorAssemblyInfo.cache
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\tp11.RazorAssemblyInfo.cs
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\staticwebassets\msbuild.tp11.Microsoft.AspNetCore.StaticWebAssets.props
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\staticwebassets\msbuild.build.tp11.props
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.tp11.props
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.tp11.props
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\staticwebassets.pack.json
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\staticwebassets.build.json
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\staticwebassets.development.json
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\scopedcss\bundle\tp11.styles.css
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\scopedcss\projectbundle\tp11.bundle.scp.css
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\tp11.csproj.CopyComplete
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\tp11.dll
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\refint\tp11.dll
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\tp11.pdb
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\tp11.genruntimeconfig.cache
+Z:\programacion 2023\TP11-1\obj\Debug\net6.0\ref\tp11.dll

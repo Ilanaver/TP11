@@ -1,30 +1,48 @@
+<main>
+    <div class="banner">
+        <img class="imagen-banner" src="@ViewBag.Jugador.ImagenJugador" alt="">
+        <h2>@ViewBag.Jugador.Nombre</h2>
+        <a href='@Url.Action("InfoEquipo", "Home", new{IdEquipo=ViewBag.Jugador.IdEquipo})'><img src="@ViewBag.Jugador.ImEquipo"></a>
+        <img class="pais-banner" src="@ViewBag.Jugador.ImPais" alt="">
+    </div>
 
-<h1>@ViewBag.Jugador.Nombre</h1>
-<img src="@ViewBag.Jugador.ImagenJugador" alt="">
-<img src="@ViewBag.Jugador.ImEquipo" alt="">
-<h1>Edad: @ViewBag.Jugador.Edad</h1>
-<h1>Posicion: @ViewBag.Jugador.Posicion</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Posición</th>
+                <th>Edad</th>
+                <th>Partidos jugados</th>
+                <th>Goles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@ViewBag.Jugador.Posicion</td>
+                <td>@ViewBag.Jugador.Edad</td>
+                <td>@ViewBag.Jugador.PartidosJugados</td>
+                <td>@ViewBag.Jugador.Goles</td>
+            </tr>
+        </tbody>
+    </table>
 
-<h1>Descripcion: @ViewBag.Jugador.Descripcion</h1>
-<h1>Partidos jugados: @ViewBag.Jugador.PartidosJugados</h1>
-<h1>Goles: @ViewBag.Jugador.Goles</h1>
+    <p class="descripcion">@ViewBag.Jugador.Descripcion</p>
 
-
-<p>  @ViewBag.Jugador.ImPais</p>
-<p>Pais: @ViewBag.Jugador.IdPais</p>
-<p>EquipoActual: @ViewBag.Jugador.IdEquipo</p>
-<p>@ViewBag.Jugador.ImEquipo</p>
-
-<h1>Likes: @ViewBag.Jugador.Likes</h1>
-<img src="@ViewBag.Jugador.ImEquipo" alt="">
-<h1>Dislikes: @ViewBag.Jugador.Dislikes</h1>
-
-<h2>Titulos:</h2>
-@foreach (TituloXJugador item in ViewBag.TitulosJugador)
-{
-    <p>@item.Nombre</p>
-     <img src="@item.Imagen" alt="">
-}
+    @if (ViewBag.TitulosJugador != null)
+    {
+        <div class="titulos">
+            @foreach (TituloXJugador item in ViewBag.TitulosJugador)
+            {
+                <div class="card" style="margin-bottom: 10px; width: 9rem;">
+                    <img class="card-img-top" src="@item.Imagen" alt="Card image cap">
+                    <div class="card-body" style="text-align: center;">
+                        <p><b>@item.Nombre</b></p>
+                        <p>Año: @item.Año</p>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</main>
 
 <h1>Comentarios:</h1>
 @foreach (Comentario item in ViewBag.ComentariosJugador)
@@ -34,11 +52,12 @@
 
 <a href='@Url.Action("Inicio", "Home")'>Volver al inicio</a>
 <h1>Agregar Comentario</h1>
-<form action='@Url.Action("AgregarComentario","Home")' >
-    <input type="hidden" name="IdJugador" value="@ViewBag.Jugador.IdJugador" >
+<form action='@Url.Action("AgregarComentario","Home")'>
+    <input type="hidden" name="IdJugador" value="@ViewBag.Jugador.IdJugador">
     <input type="hidden" name="IdUsuario" value="">
-    <input class="controls" autocomplete="off" type="text" name="Contenido" required placeholder="Ingrese el comentario">
-    <input class="botons" type="submit" value="Cargar" >
+    <input class="controls" autocomplete="off" type="text" name="Contenido" required
+        placeholder="Ingrese el comentario">
+    <input class="botons" type="submit" value="Cargar">
 
     <p id="errorIngreso"></p>
 </form>
