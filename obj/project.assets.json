@@ -505,23 +505,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\47958668\\.nuget\\packages\\": {},
+    "C:\\Users\\47573419\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\programacion 2023\\TP11\\TP11.csproj",
+      "projectUniqueName": "Z:\\2023\\programacion\\TP11-main\\TP11\\TP11.csproj",
       "projectName": "TP11",
-      "projectPath": "Z:\\programacion 2023\\TP11\\TP11.csproj",
-      "packagesPath": "C:\\Users\\47958668\\.nuget\\packages\\",
-      "outputPath": "Z:\\programacion 2023\\TP11\\obj\\",
+      "projectPath": "Z:\\2023\\programacion\\TP11-main\\TP11\\TP11.csproj",
+      "packagesPath": "C:\\Users\\47573419\\.nuget\\packages\\",
+      "outputPath": "Z:\\2023\\programacion\\TP11-main\\TP11\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\47958668\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\47573419\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -579,5 +579,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché Z:\\2023\\programacion\\TP11-main\\TP11\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

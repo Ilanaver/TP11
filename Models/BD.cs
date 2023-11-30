@@ -4,14 +4,14 @@ using System.Data;
 namespace TP11.Models;
 
 public static class BD {
-    public static string _connectionString = @"Server=localhost;DataBase=FuthubBD;Trusted_Connection=True;";
+    public static string _connectionString = @"Server=DESKTOP-0JV76DN\SQLEXPRESS;DataBase=FuthubBD;Trusted_Connection=True;";
     
    public static void CrearUsuario(Usuario us)
     {
         using (SqlConnection BD = new SqlConnection(_connectionString))
         {
-            string sql = "INSERT INTO Usuarioo([username],[contraseña],[nombre],[email],[telefono]) VALUES(@Username,@Contraseña,@Nombre,@Email,@Telefono)";
-            BD.Execute(sql, new { Username = us.username, Contraseña = us.contraseña, Nombre = us.nombre, Email = us.email, Telefono = us.telefono });
+            string sql = "INSERT INTO Usuario([username],[contraseña],[email]) VALUES(@Username,@Contraseña,@mail)";
+            BD.Execute(sql, new { username = us.username, contraseña = us.contraseña, mail = us.mail});
         }
     }
 
@@ -37,7 +37,7 @@ public static class BD {
 
     public static string GetContraseñaPorUsername(string username)
     {
-        string contraseña;
+        string contraseña = null;
         using (SqlConnection BD = new SqlConnection(_connectionString))
         {
             string sql = "SELECT contraseña FROM Usuario WHERE username=@Username";
@@ -76,7 +76,7 @@ public static class BD {
         List<Jugador> ListaJugadores = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "GetJugadoresByEquipo";
-            ListaJugadores = db.Query<Jugador>(sp, new { IdEquipoActual = idteam}, commandType: CommandType.StoredProcedure).ToList();
+            ListaJugadores = db.Query<Jugador>(sp, new { IdEquipo = idteam}, commandType: CommandType.StoredProcedure).ToList();
         }
         return ListaJugadores;
     }
@@ -133,7 +133,7 @@ public static class BD {
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sp = "InsertarJugador";
             db.Execute(sp, new {IdPais = jug.IdPais,
-            IdEquipoActual = jug.IdEquipoActual,
+            IdEquipo = jug.IdEquipo,
             Nombre = jug.Nombre,
             Imagen = jug.ImagenJugador,
             Edad = jug.Edad,
@@ -143,6 +143,7 @@ public static class BD {
             Goles = jug.Goles,
             Likes = jug.Likes,
             Dislikes = jug.Dislikes}, commandType: CommandType.StoredProcedure);
+             
         }
     }
 
@@ -172,5 +173,21 @@ public static class BD {
         }
         return ListaEquipos;
     }
+
+    public static void InsertarComentario(Comentario com){
+         using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "InsertarComentario";
+            db.Execute(sp, new {idUsuario = 2,idJugador = com.IdJugador,Contenido=com.Contenido,Likes = 0}, commandType: CommandType.StoredProcedure);
+        }
+    }
+
+      public static void ModificarLikes(int IdJugador){
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "ModificarLikes";
+            db.Execute(sp, new {IdJugador = IdJugador}, commandType: CommandType.StoredProcedure);
+             
+        }
+    }
+
     
 }

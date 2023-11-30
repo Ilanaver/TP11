@@ -25,6 +25,7 @@ public class HomeController : Controller
     
     public IActionResult Busqueda(string terminoBuscado)
     {
+        ViewBag.terminoBuscado=terminoBuscado;
         ViewBag.ListaResultados=BD.Busqueda(terminoBuscado);
         return View();
     }
@@ -33,6 +34,7 @@ public class HomeController : Controller
     {
         ViewBag.Jugador=BD.GetJugadorByID(IdJugador);
         ViewBag.TitulosJugador=BD.GetTitulosByJugador(IdJugador);
+        ViewBag.ComentariosJugador=BD.GetComentarioByJugador(IdJugador);
         return View();
     }
     public IActionResult InfoEquipo(int IdEquipo)
@@ -58,7 +60,7 @@ public class HomeController : Controller
     public IActionResult GuardarJugador(Jugador jug)
     {
         BD.InsertarJugador(jug);
-        return RedirectToAction("InfoJugador",new{IdJugador=jug.IdJugador});
+        return RedirectToAction ("Inicio", "Home");
     }
 
     public IActionResult AgregarTituloJugador()
@@ -68,4 +70,16 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult AgregarComentario(Comentario com)
+    {
+        BD.InsertarComentario(com);
+        return RedirectToAction ("InfoJugador",new{IdJugador=com.IdJugador});
+    }
+
+     public IActionResult DarLike(int IdJugador)
+    {
+        BD.ModificarLikes(IdJugador);
+        return RedirectToAction ("InfoJugador",new{IdJugador=IdJugador});
+    }
+    
 }

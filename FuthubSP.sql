@@ -2,7 +2,7 @@ CREATE procedure GetJugadorByID(@idJugador int)
 as
 begin
 select J.*, E.Imagen, P.Imagen from Jugador J
-inner join Equipo E on E.IdEquipo=J.IdEquipoActual
+inner join Equipo E on E.IdEquipo=J.IdEquipo
 inner join Pais P on P.IdPais=J.IdPais
 where IdJugador=@idJugador
 end
@@ -28,7 +28,7 @@ go
 CREATE procedure GetJugadoresByEquipo(@idEquipo int)
 as
 begin
-select * from Jugador where IdEquipoActual=@idEquipo
+select * from Jugador where IdEquipo=@idEquipo
 end
 go
 
