@@ -38,7 +38,28 @@ function ActualizarLikes(IdJ)
                 else{
                     let likesantes = parseInt($("#CantLikes_" + IdJ).html()) +1
                     $("#CantLikes_" + IdJ).html(likesantes)
+                }
+
+            }
+        }
+    )
+}
+
+
+function ComprobarInicio() 
+{
     
+    $.ajax(
+        {
+            type:'POST',
+            dataType:'JSON',
+            url:'/Home/ComprobarInicio',
+            success:
+            function(response){
+                // sumar 1 en el like
+                if (response.respuesta == "NoLog")
+                {
+                    alert("Primero debes loguearte");
                 }
 
             }

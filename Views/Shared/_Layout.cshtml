@@ -16,23 +16,24 @@
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <img src="/Fut_Hu-removebg-preview.png" alt="">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href='@Url.Action("Inicio","Home")'>Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href='@Url.Action("AgregarJugador", "Home")'>Agregar un jugador</a>
+          <a class="nav-link" href='@Url.Action("AgregarJugador", "Home")' onclick=ComprobarInicio()>Agregar un jugador</a>
         </li>
       </ul>
       
       <form action='@Url.Action("Busqueda","Home")' class="d-flex" role="search">
         <input name="terminoBuscado" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-outline-success" type="submit" onclick=ComprobarInicio()>Search</button>
       </form>
 
     @if(BD.user == null){
         
         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick=""InicioDeSeccion()>
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick=""InicioDeSeccion()>
   Iniciar Sesion
 </button>
 
@@ -42,25 +43,32 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Registrate</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         
 
         <form class="Formulario" action='@Url.Action("Login","Account")' method="post">
-    <input autocomplete="off" type="text" name="username" required placeholder="Ingrese Username">
-    <input autocomplete="off" type="password" name="contraseña" required placeholder="Ingrese contraseña">
-    <input type="submit" value="Iniciar sesión">
+        <div class="ingre">
+    <input class="formIngreso" autocomplete="off" type="text" name="username" required placeholder="Ingrese Username">
+    </div>
+    <div class="ingre2">
+    <input class="formIngreso" autocomplete="off" type="password" name="contraseña" required placeholder="Ingrese contraseña">
+        </div>
+
+    <div class="Inicioses">
+    <input type="submit" class="btn btn-success" value="Iniciar sesión">
+    </div>
 
         </form>
 
-
       </div>
       <div class="modal-footer">
-            <a href='@Url.Action("CambiarContraseña", "Home")' class="btn btn-primary">Olvide mi contraseña</a>
-            <a href='@Url.Action("Registro", "Home")' class="btn btn-primary">Registrarse</a>
-
+      <div class="foots">
+            <a href='@Url.Action("CambiarContraseña", "Home")' class="btn btn-success">Olvide mi contraseña</a>
+            <a href='@Url.Action("Registro", "Home")' class="btn btn-success">Registrarse</a>
+      </div>
 
       </div>
     </div>

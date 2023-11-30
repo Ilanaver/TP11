@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7P3TbPjg/o6GT4f2JdHpa5US+zuhkmw4gXDtBUz8rd0=",
+  "Hash": "gwJX+gteIh5oIfMFrQ2SK2/KmHu5O2RryoH21PejETk=",
   "Source": "tp11",
   "BasePath": "_content/tp11",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "Z:\\ort2023\\prog\\TP11\\wwwroot\\Fut_Hu-removebg-preview.png",
+      "SourceId": "tp11",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\ort2023\\prog\\TP11\\wwwroot\\",
+      "BasePath": "_content/tp11",
+      "RelativePath": "Fut_Hu-removebg-preview.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Fut_Hu-removebg-preview.png"
     },
     {
       "Identity": "Z:\\ort2023\\prog\\TP11\\wwwroot\\imagenPrincipal.png",

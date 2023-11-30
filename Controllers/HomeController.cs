@@ -74,7 +74,7 @@ public class HomeController : Controller
 
     public IActionResult AgregarJugador()
     {
-        if(BD.user != null){
+            if(BD.user != null){
             ViewBag.ListaPaises=BD.GetPaises();
             ViewBag.ListaEquipos=BD.GetEquipos();
         return View("AgregarJugador");
@@ -102,18 +102,26 @@ public class HomeController : Controller
         return RedirectToAction ("InfoJugador",new{IdJugador=com.IdJugador});
     }
 
-     public object DarLike(int IdJugador)
+    public object DarLike(int IdJugador)
     {
         if(BD.user != null)
         {
-        BD.ModificarLikes(IdJugador);
-            return new  {respuesta ="OK"};
+            BD.ModificarLikes(IdJugador);
+            return new {respuesta = "OK"};
         }else{
-        return new  {respuesta ="NoLog"};
+            return new {respuesta = "NoLog"};
         }
 
-
-        
     }
     
+    public object ComprobarInicio()
+    {
+        if(BD.user != null)
+        {
+            return new {respuesta = "OK"};
+        }else{
+            return new {respuesta = "NoLog"};
+        }
+
+    }
 }

@@ -166,12 +166,6 @@ tr:nth-child(even) {
   text-decoration: none;
   color: white;
 }
-
-.comentario{
-  padding: 10px;
-  border-top: 2px solid #e4e4e4;
-  border-bottom: 2px solid #e4e4e4;
-}
 .usuario
 {
   gap: 20px;
@@ -211,4 +205,55 @@ select[name="IdEquipo"] {
   background-color: #f2f2f2;
   color: #333;
   font-size: 14px;
+}
+.BodyRegistro {
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, rgb(163, 163, 163), green);
+}
+.JugPop{
+  color: black;
+  text-align: center;
+}
+.card
+{
+  background-color: rgb(255, 255, 255) !important;
+  border: 5px solid rgb(4, 75, 1) !important;
+  border-radius: 15px !important;
+  transition: .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.formIngreso
+{
+width: 70%;
+display: flex;
+justify-content: center;
+flex-direction: column; 
+margin-bottom: 1%;
+}
+
+.formulario{
+display: flex;
+justify-content: center;
+}
+.Inicioses{
+  display: flex;
+justify-content: center;
+}
+
+.card img{
+  border-radius: 9px !important;
+}
+
+.card:hover{
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.ingre{
+  display: flex;
+justify-content: center;
+}
+.ingre2{
+  display: flex;
+justify-content: center;
 }
