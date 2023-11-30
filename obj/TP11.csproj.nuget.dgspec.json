@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\prog\\TP11\\TP11.csproj": {}
+    "Z:\\prog\\TP11\\tp11.csproj": {}
   },
   "projects": {
-    "Z:\\prog\\TP11\\TP11.csproj": {
+    "Z:\\prog\\TP11\\tp11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\prog\\TP11\\TP11.csproj",
-        "projectName": "TP11",
-        "projectPath": "Z:\\prog\\TP11\\TP11.csproj",
+        "projectUniqueName": "Z:\\prog\\TP11\\tp11.csproj",
+        "projectName": "tp11",
+        "projectPath": "Z:\\prog\\TP11\\tp11.csproj",
         "packagesPath": "C:\\Users\\47756465\\.nuget\\packages\\",
         "outputPath": "Z:\\prog\\TP11\\obj\\",
         "projectStyle": "PackageReference",

@@ -19,14 +19,26 @@ public class HomeController : Controller
     }
     public IActionResult Inicio()
     {
-        ViewBag.PrimerosJugadores=BD.GetTENPlayers();
-        return View();
+        if(BD.user != null)
+        {
+            ViewBag.PrimerosJugadores=BD.GetTENPlayers();
+        return View(Inicio);
+        }else{
+            return View("Index");
+        }
+        
     }
     
     public IActionResult Busqueda(string terminoBuscado)
     {
+        if(BD.user != null){
+        ViewBag.terminoBuscado=terminoBuscado;
         ViewBag.ListaResultados=BD.Busqueda(terminoBuscado);
-        return View();
+        return View("Busqueda");
+        }else{
+            return View("Index");
+        }
+        
     }
     
     public IActionResult InfoJugador(int IdJugador)
@@ -43,9 +55,9 @@ public class HomeController : Controller
         ViewBag.ListaJugadores=BD.GetJugadoresByEquipo(IdEquipo);
         return View();
     }
-    public IActionResult Perfil(int IdUsuario)
+    public IActionResult Perfil(string username)
     {
-        ViewBag.Perfil=BD.GetUsuarioByID(IdUsuario);
+        ViewBag.Perfil=BD.GetUsuarioByUsername(username);
         return View();
     }
     
@@ -75,4 +87,10 @@ public class HomeController : Controller
         return RedirectToAction ("InfoJugador",new{IdJugador=com.IdJugador});
     }
 
+     public IActionResult DarLike(int IdJugador)
+    {
+        BD.ModificarLikes(IdJugador);
+        return RedirectToAction ("InfoJugador",new{IdJugador=IdJugador});
+    }
+    
 }

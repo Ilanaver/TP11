@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "TP11/1.0.0": {
+      "tp11/1.0.0": {
         "dependencies": {
           "Dapper": "2.1.24",
           "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
-          "TP11.dll": {}
+          "tp11.dll": {}
         }
       },
       "Dapper/2.1.24": {
@@ -101,7 +101,7 @@
     }
   },
   "libraries": {
-    "TP11/1.0.0": {
+    "tp11/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
