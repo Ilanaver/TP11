@@ -27,24 +27,24 @@ function hola(params) {
       });
 }
 
-function estoyDeAcuerdo(){
-    (async () => {
-        const { value: accept } = await Swal.fire({
-          title: "Terms and conditions",
-          input: "checkbox",
-          inputValue: 1,
-          inputPlaceholder: `
-            I agree with the terms and conditions
-          `,
-          confirmButtonText: `
-            Continue&nbsp;<i class="fa fa-arrow-right"></i>
-          `,
-          inputValidator: (result) => {
-            return !result && "You need to agree with T&C";
-          }
-        });
-        if (accept) {
-          Swal.fire("You agreed with T&C :)");
+
+function ActualizarLikes(IdJugador) 
+{
+    $.ajax(
+        {
+            type:'POST',
+            dataType:'JSON',
+            url:'/Home/VerDetalleSerie',
+            data:{IdSerie: IdSerie},
+            success:
+            function(response){
+                $("#NombreSerie").html(response.nombre);
+                $("#FotoSerie").attr("src",response.imagenSerie);
+                $("#AñoInicio").html(response.añoInicio);
+                $("#Sinopsis").html(response.sinopsis);
+                vaciarHTMLActores();
+                vaciarHTMLTemporadas();
+            }
         }
-      })()
+    )
 }

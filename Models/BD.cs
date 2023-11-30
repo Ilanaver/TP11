@@ -4,7 +4,7 @@ using System.Data;
 namespace TP11.Models;
 
 public static class BD {
-    public static string _connectionString = @"Server=DESKTOP-K5G1LDU\SQLEXPRESS;DataBase=FuthubBD;Trusted_Connection=True;";
+    public static string _connectionString = @"Server=DESKTOP-0JV76DN\SQLEXPRESS;DataBase=FuthubBD;Trusted_Connection=True;";
     
    public static void CrearUsuario(Usuario us)
     {
@@ -180,5 +180,14 @@ public static class BD {
             db.Execute(sp, new {idUsuario = 2,idJugador = com.IdJugador,Contenido=com.Contenido,Likes = 0}, commandType: CommandType.StoredProcedure);
         }
     }
+
+      public static void ModificarLikes(int IdJugador){
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "ModificarLikes";
+            db.Execute(sp, new {IdJugador = IdJugador}, commandType: CommandType.StoredProcedure);
+             
+        }
+    }
+
     
 }
