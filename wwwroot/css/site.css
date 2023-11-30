@@ -145,7 +145,7 @@ th, td {
 }
 
 th {
-  background-color: #24ca3d;
+  background-color: green;
   color: #ecf0f1;
 }
 
@@ -153,3 +153,7 @@ tr:nth-child(even) {
   background-color: #e4e4e4;
 }
 
+.AddPlayer{
+  text-decoration: none;
+  color: white;
+}
