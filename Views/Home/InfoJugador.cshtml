@@ -51,10 +51,8 @@
 @foreach (Comentario item in ViewBag.ComentariosJugador)
 {
     <div class="comentario">
-    <p><b>Usuario</b></p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi illum obcaecati blanditiis voluptates
-        recusandae asperiores ratione, nisi minus quisquam nam soluta consectetur delectus rem minima ullam sit fuga
-        cumque?</p>
+    <p><b>@item.NombreUsuario</b></p>
+    <p>@item.Contenido</p>
 </div>
 }
 

@@ -29,7 +29,6 @@
           <img src=@item.ImagenJugador>
           <div class="card-body">
             <h5 class="card-title">@item.Nombre</h5>
-            <p class="card-text">@item.Descripcion</p>
             <a href='@Url.Action("DarLike","Home", new{IdJugador=@item.IdJugador})'><img src="https://www.nicepng.com/png/full/778-7786050_download-instagram-like-icon-png.png" width="10%">@item.Likes</a>
             <a href='@Url.Action("InfoJugador", new{IdJugador=@item.IdJugador})' class="btn btn-success">Ver Info</a>
           </div>
