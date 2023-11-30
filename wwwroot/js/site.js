@@ -17,37 +17,31 @@ function verificarContraseña() {
 
 }
 
-function hola(params) {
-    Swal.fire({
-        position: "top-end",
-        icon: "success",
-        title: "Your work has been saved",
-        showConfirmButton: false,
-        timer: 1500
-      });
-}
 
 
-function ActualizarLikes(IdJugador) 
+function ActualizarLikes(IdJ) 
 {
+    
     $.ajax(
         {
             type:'POST',
             dataType:'JSON',
             url:'/Home/DarLike',
-            data:{IdJugador: IdJugador},
+            data:{IdJugador: IdJ},
             success:
             function(response){
-                
+                // sumar 1 en el like
+                if (response.respuesta == "NoLog")
+                {
+                    alert("Primero debes loguearte");
+                }
+                else{
+                    let likesantes = parseInt($("#CantLikes_" + IdJ).html()) +1
+                    $("#CantLikes_" + IdJ).html(likesantes)
+    
+                }
+
             }
         }
     )
 }
-
-
-$("#NombreSerie").html(response.nombre);
-$("#FotoSerie").attr("src",response.imagenSerie);
-$("#AñoInicio").html(response.añoInicio);
-$("#Sinopsis").html(response.sinopsis);
-vaciarHTMLActores();
-vaciarHTMLTemporadas();
