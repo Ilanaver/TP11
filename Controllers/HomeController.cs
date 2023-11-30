@@ -17,6 +17,11 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Perfil(int IdUsuario)
+    {
+        ViewBag.Datos=BD.mostrarDatos(IdUsuario);
+        return View();
+    }
     public IActionResult Inicio()
     {
         
@@ -58,6 +63,8 @@ public class HomeController : Controller
         ViewBag.ListaJugadores=BD.GetJugadoresByEquipo(IdEquipo);
         return View();
     }
+<<<<<<< HEAD
+=======
 
     public IActionResult Perfil(string username)
     {
@@ -65,10 +72,15 @@ public class HomeController : Controller
         return View();
     }
     
+>>>>>>> 36023bc81276ebec11fde06112798987cad79457
 
     public IActionResult AgregarJugador()
     {
+<<<<<<< HEAD
             if(BD.user != null){
+=======
+        if(BD.user != null){
+>>>>>>> 99e6e9b8356996e4c4162680d7bab024a8a4521d
             ViewBag.ListaPaises=BD.GetPaises();
             ViewBag.ListaEquipos=BD.GetEquipos();
         return View("AgregarJugador");

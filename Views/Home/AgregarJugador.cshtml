@@ -1,5 +1,9 @@
-<p>Formulario de Agregar jugador</p>
-<form action='@Url.Action("GuardarJugador","Home")'>
+
+<div class="ContainRegistro">
+     
+
+<form  action='@Url.Action("GuardarJugador","Home")' class="Registro">
+    <p>Formulario de Agregar jugador</p>
     <select name="IdPais">
         <option value="" disabled selected>País de origen</option>
         @foreach (Pais item in ViewBag.ListaPaises)
@@ -28,6 +32,7 @@
         placeholder="Ingrese los goles del jugador">
     <button type="submit" value="Cargar" class="btn btn-success">Subir comentario</button>
 
-
-    <p id="errorIngreso"></p>
+ 
 </form>
+</div>
+   <p id="errorIngreso"></p>
