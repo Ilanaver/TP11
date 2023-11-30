@@ -1,4 +1,5 @@
-<p>Formulario de Agregar jugador</p>
+<div class="ContainRegistro">
+     <p>Formulario de Agregar jugador</p>
 <form action='@Url.Action("GuardarJugador","Home")'>
     <select name="IdPais">
         <option value="" disabled selected>País de origen</option>
@@ -32,5 +33,7 @@
         placeholder="Ingrese los dislikes del jugador">
     <input class="botons" type="submit" value="Cargar">
 
-    <p id="errorIngreso"></p>
+ 
 </form>
+</div>
+   <p id="errorIngreso"></p>

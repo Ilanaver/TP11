@@ -1,10 +1,11 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="ContainRegistro">
 <form class="Formulario" action='@Url.Action("Login","Account")' method="post">
-    <input autocomplete="off" type="text" name="username" required placeholder="Ingrese Username">
-    <input autocomplete="off" type="password" name="contraseña" required placeholder="Ingrese contraseña">
-    <input type="submit" value="Iniciar sesión" onclick="hola()">
+    <input class="controls" autocomplete="off" type="text" name="username" required placeholder="Ingrese Username">
+    <input class="controls" autocomplete="off" type="password" name="contraseña" required placeholder="Ingrese contraseña">
+    <input class="botons" type="submit" value="Iniciar sesión" onclick="hola()">
 </form>
 
 <a href='@Url.Action("Registro", "Home")'>Registrarse</a>
@@ -24,18 +25,19 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Registrate</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         
-
+          
         <form class="Formulario" action='@Url.Action("Login","Account")' method="post">
     <input autocomplete="off" type="text" name="username" required placeholder="Ingrese Username">
     <input autocomplete="off" type="password" name="contraseña" required placeholder="Ingrese contraseña">
     <input type="submit" value="Iniciar sesión" onclick="hola()">
 
         </form>
+        
 
 
       </div>
@@ -47,4 +49,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>

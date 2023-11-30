@@ -4,12 +4,9 @@ using System.Data;
 namespace TP11.Models;
 
 public static class BD {
-<<<<<<< HEAD
-=======
     public static Usuario user=null;
 
 
->>>>>>> acca28a592587ac9b971803a92fcb7c21d0d8d04
     public static string _connectionString = @"Server=localhost;DataBase=FuthubBD;Trusted_Connection=True;";
     
    public static void CrearUsuario(Usuario us)
