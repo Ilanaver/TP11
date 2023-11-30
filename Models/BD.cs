@@ -180,5 +180,14 @@ public static class BD {
             db.Execute(sp, new {idUsuario = 2,idJugador = com.IdJugador,Contenido=com.Contenido,Likes = 0}, commandType: CommandType.StoredProcedure);
         }
     }
+
+      public static void ModificarLikes(int IdJugador){
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "ModificarLikes";
+            db.Execute(sp, new {IdJugador = IdJugador}, commandType: CommandType.StoredProcedure);
+             
+        }
+    }
+
     
 }

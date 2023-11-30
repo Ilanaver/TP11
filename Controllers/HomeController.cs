@@ -75,4 +75,10 @@ public class HomeController : Controller
         return RedirectToAction ("InfoJugador",new{IdJugador=com.IdJugador});
     }
 
+     public IActionResult DarLike(int IdJugador)
+    {
+        BD.ModificarLikes(IdJugador);
+        return RedirectToAction ("InfoJugador",new{IdJugador=IdJugador});
+    }
+    
 }
