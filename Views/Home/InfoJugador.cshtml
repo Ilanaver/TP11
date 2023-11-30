@@ -50,8 +50,12 @@
 <h2>@ViewBag.ComentariosJugador.Count comentarios</h2>
 @foreach (Comentario item in ViewBag.ComentariosJugador)
 {
-    
-    <p>@item.Contenido</p>
+    <div class="comentario">
+    <p><b>Usuario</b></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi illum obcaecati blanditiis voluptates
+        recusandae asperiores ratione, nisi minus quisquam nam soluta consectetur delectus rem minima ullam sit fuga
+        cumque?</p>
+</div>
 }
 
 
@@ -60,7 +64,7 @@
     <input type="hidden" name="IdUsuario" value="">
     <input class="controls" autocomplete="off" type="text" name="Contenido" required
         placeholder="Ingrese el comentario">
-    <input class="botons" type="submit" value="Cargar">
+    <button type="submit" value="Cargar" class="btn btn-success">Subir comentario</button>
 
     <p id="errorIngreso"></p>
 </form>
