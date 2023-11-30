@@ -505,23 +505,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\47573419\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\47958668\\.nuget\\packages\\": {},
+>>>>>>> 7a90a0a07ae70b3f357826f1a157030e391adb3e
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "Z:\\2023\\programacion\\TP11-main\\TP11\\tp11.csproj",
       "projectName": "tp11",
       "projectPath": "Z:\\2023\\programacion\\TP11-main\\TP11\\tp11.csproj",
       "packagesPath": "C:\\Users\\47573419\\.nuget\\packages\\",
       "outputPath": "Z:\\2023\\programacion\\TP11-main\\TP11\\obj\\",
+=======
+      "projectUniqueName": "Z:\\programacion 2023\\TP11-1\\tp11.csproj",
+      "projectName": "tp11",
+      "projectPath": "Z:\\programacion 2023\\TP11-1\\tp11.csproj",
+      "packagesPath": "C:\\Users\\47958668\\.nuget\\packages\\",
+      "outputPath": "Z:\\programacion 2023\\TP11-1\\obj\\",
+>>>>>>> 7a90a0a07ae70b3f357826f1a157030e391adb3e
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\47573419\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\47958668\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 7a90a0a07ae70b3f357826f1a157030e391adb3e
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
