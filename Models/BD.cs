@@ -144,8 +144,8 @@ public static class BD {
             Posicion = jug.Posicion,
             PartidosJugados = jug.PartidosJugados,
             Goles = jug.Goles,
-            Likes = jug.Likes,
-            Dislikes = jug.Dislikes}, commandType: CommandType.StoredProcedure);
+            Likes = 0,
+            Dislikes = 0}, commandType: CommandType.StoredProcedure);
              
         }
     }
