@@ -4,7 +4,7 @@ namespace TP11.Controllers;
 
 public class HomeController : Controller
 {
-        public IActionResult Index()
+    public IActionResult Index()
     {
         return RedirectToAction ("Inicio", "Home");
     }
@@ -68,16 +68,15 @@ public class HomeController : Controller
 
     public IActionResult AgregarJugador()
     {
-
-        if(BD.user != null)
-        {
+        
+        return View();
+        if(BD.user != null){
             ViewBag.ListaPaises=BD.GetPaises();
-        ViewBag.ListaEquipos=BD.GetEquipos();
-        return View("AgregarJugador");
+            ViewBag.ListaEquipos=BD.GetEquipos();
+        return View();
         }else{
-        return RedirectToAction ("Index", "Home");
+            return View("Index");
         }
-
     }
 
     public IActionResult GuardarJugador(Jugador jug)
