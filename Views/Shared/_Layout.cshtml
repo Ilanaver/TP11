@@ -21,10 +21,53 @@
           <a class="nav-link" href='@Url.Action("AgregarJugador", "Home")'>Agregar un jugador</a>
         </li>
       </ul>
+      
       <form action='@Url.Action("Busqueda","Home")' class="d-flex" role="search">
         <input name="terminoBuscado" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
+
+    @if(BD.user == null){
+        
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick=""InicioDeSeccion()>
+  Iniciar Sesion
+</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Registrate</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+
+        <form class="Formulario" action='@Url.Action("Login","Account")' method="post">
+    <input autocomplete="off" type="text" name="username" required placeholder="Ingrese Username">
+    <input autocomplete="off" type="password" name="contraseña" required placeholder="Ingrese contraseña">
+    <input type="submit" value="Iniciar sesión" onclick="hola()">
+
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+            <a href='@Url.Action("CambiarContraseña", "Home")' class="btn btn-primary">Olvide mi contraseña</a>
+            <a href='@Url.Action("Registro", "Home")' class="btn btn-primary">Registrarse</a>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+}
+
+
     </div>
   </div>
 </nav>
