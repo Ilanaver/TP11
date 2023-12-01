@@ -101,14 +101,26 @@ public class HomeController : Controller
         BD.InsertarComentario(com);
         return RedirectToAction ("InfoJugador",new{IdJugador=com.IdJugador});
     }
+        int num=0;
+        bool sucedio = false;
 
     public object DarLike(int IdJugador)
     {
         if(BD.user != null)
         {
-            BD.ModificarLikes(IdJugador);
-            return new {respuesta = "OK"};
-        }else{
+            if(sucedio==false)
+            {
+                sucedio=true;
+                BD.ModificarLikes(IdJugador);
+                return new {respuesta = "OK"};
+            }else
+            {
+                sucedio=false;
+                BD.modificarLikesResta(IdJugador);
+                return new {respuesta = "NoOK"}; 
+            }
+        }else
+        {
             return new {respuesta = "NoLog"};
         }
 

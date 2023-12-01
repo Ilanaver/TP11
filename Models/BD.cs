@@ -7,7 +7,7 @@ public static class BD {
     public static Usuario user=null;
 
 
-    public static string _connectionString = @"Server=localhost;DataBase=FuthubBD;Trusted_Connection=True;";
+    public static string _connectionString = @"Server=DESKTOP-0JV76DN\SQLEXPRESS;DataBase=FuthubBD;Trusted_Connection=True;";
     
    public static void CrearUsuario(Usuario us)
     {
@@ -191,6 +191,19 @@ public static class BD {
              
         }
     }
+
+    public static void modificarLikesResta(int IdJugador){
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sp = "modificarLikesResta";
+            db.Execute(sp, new {IdJugador = IdJugador}, commandType: CommandType.StoredProcedure);
+             
+        }
+    }
+
+        public static int numeroDeLikes(int numero){
+        numero ++;
+        return numero;
+        }
 
     
 }

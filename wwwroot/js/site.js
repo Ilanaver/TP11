@@ -36,8 +36,16 @@ function ActualizarLikes(IdJ)
                     alert("Primero debes loguearte");
                 }
                 else{
-                    let likesantes = parseInt($("#CantLikes_" + IdJ).html()) +1
+                    if(response.respuesta == "OK")
+                    {
+                        let likesantes = parseInt($("#CantLikes_" + IdJ).html()) +1
                     $("#CantLikes_" + IdJ).html(likesantes)
+                    }else
+                    {
+                        let likesantes = parseInt($("#CantLikes_" + IdJ).html()) -1
+                        $("#CantLikes_" + IdJ).html(likesantes) 
+                    }
+                    
                 }
 
             }
